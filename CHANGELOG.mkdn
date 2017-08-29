@@ -1,0 +1,84 @@
+
+ ▼ Resurrection Remix Nougat Ver 5.8.4 Changelog
+
+
+ ▼ 08/27/2017
+
+
+ ▪ project frameworks/base/
+
+ ▪ project packages/apps/DUI/
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/Settings/
+
+ ▼ 08/26/2017
+
+
+ ▪ project device/samsung/hlte-common/
+ ▪ e63b025 hlte-common: proprietary-files: Drop libdsi_netctrl.so from list
+
+ ▪ project device/samsung/i9100/
+ ▪ 240e5ee i9100: Update extract-files and setup-makefiles
+
+ ▪ project device/samsung/klte-common/
+ ▪ c2173e9 klte-common: proprietary-files: Pin hexed sensors.msm8974.so
+
+ ▪ project packages/apps/Eleven/
+ ▪ 943d43e Eleven: Fix restoring user settings
+
+ ▪ project packages/apps/UnifiedEmail/
+ ▪ 2dd00df Email: Fix led notification settings
+
+ ▪ project packages/services/Telephony/
+ ▪ 6e6fe97 Allow to ignore presentation indicator of outgoing calls [3/3]
+
+ ▪ project vendor/samsung/
+ ▪ aa0dcd9 klte-common: Hex sensors.msm8974.so to quiet LightSensor logspam
+ ▪ 03a8682 sensors: Hex edit the sensors hal to remove excesive logging
+ ▪ 84223a5 k3gxx: update proprietary files
+
+ ▼ 08/25/2017
+
+
+ ▪ project frameworks/base/
+ ▪ 756f3e0 Allow to ignore presentation indicator of outgoing calls [1/3]
+ ▪ 89fc8fd Use SystemClock.elapsedRealtime() to calc TTFF
+ ▪ d1cb955 Tweak Privacy Guard dialog layout
+ ▪ 20d80eb PowerManager: Allow to distinguish different keypresses
+ ▪ 8b63de6 Add @hide annotation to the privacy guard ops set
+ ▪ 4193207 Change visibility of the Privacy Guard ops set
+ ▪ 6ab7b90 Camera: ignore torch status update for aux or compsite camera
+ ▪ be1d6ba base: audioservice: Set BT_SCO status
+
+ ▪ project frameworks/native/
+ ▪ 9cb6681 Merge remote-tracking branch 'remotes/laos/cm-14.1' into HEAD
+
+ ▪ project frameworks/opt/telephony/
+ ▪ b231815 Allow to ignore presentation indicator of outgoing calls [2/3]
+
+ ▼ 08/24/2017
+
+
+ ▪ project packages/apps/Settings/
+ ▪ 3c8b4d4 Responsible arrangement for the Seed device.  (#851)
+
+ ▼ 08/22/2017
+
+
+ ▪ project hardware/qcom/audio-caf/msm8998/
+ ▪ eba183e Merge tag 'LA.UM.5.7.r1-10500-8x98.0' into cm-14.1-caf-8998
+
+ ▼ 08/21/2017
+
+
+ ▪ project device/samsung/galaxys2-common/
+ ▪ 4a03a75 galaxys2-common: camera: Fix scene-mode capabilities
+
+ ▪ project packages/apps/Jelly/
+ ▪ 2a6aa75 Fix NPE.
+
+ ▪ project packages/apps/Settings/
+ ▪ 14513f5 Update s7 edge maintainer
+
