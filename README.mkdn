@@ -2,3 +2,6 @@
 
 ### NOTE:DO NOT MERGE PULL REQUESTS HERE. THIS IS FOR RR DEVS ONLY . 
 Fork this repo and create ota.xml on your own github.
+
+Reminders:
+* Update vidwhal_n.xml with new filename, URL & Changelog details.
