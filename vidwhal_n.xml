@@ -17,4 +17,38 @@
             	description="Download Open latest GApps">http://opengapps.org</OpenGappsUrl>
         </hlte>
     </Stable>
+    <Stable>
+        <hltetmo>
+            <Filename>RR-N-v5.8.4-20170901-hltetmo-Unofficial-vidwhal.zip</Filename>
+            <RomUrl
+                id="rom"
+                title="Rom"
+                description="Download ResurrectionRemix builds">https://www.androidfilehost.com/?fid=889764386195925580</RomUrl>
+            <ChangelogUrl
+                id="changelog"
+                title="Changelog"
+                description="View Changelog">https://raw.githubusercontent.com/vidwhal/OTA/master/CHANGELOG.mkdn</ChangelogUrl>
+           <OpenGappsUrl
+            	id="open_gapps"
+            	title="Open Gapps"
+            	description="Download Open latest GApps">http://opengapps.org</OpenGappsUrl>
+        </hltetmo>
+    </Stable>
+    <Stable>
+        <hltechn>
+            <Filename>RR-N-v5.8.4-20170901-hltechn-Unofficial-vidwhal.zip</Filename>
+            <RomUrl
+                id="rom"
+                title="Rom"
+                description="Download ResurrectionRemix builds">https://www.androidfilehost.com/?fid=889764386195925580</RomUrl>
+            <ChangelogUrl
+                id="changelog"
+                title="Changelog"
+                description="View Changelog">https://raw.githubusercontent.com/vidwhal/OTA/master/CHANGELOG.mkdn</ChangelogUrl>
+           <OpenGappsUrl
+            	id="open_gapps"
+            	title="Open Gapps"
+            	description="Download Open latest GApps">http://opengapps.org</OpenGappsUrl>
+        </hltechn>
+    </Stable>
 </SlimOTA>
