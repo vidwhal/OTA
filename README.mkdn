@@ -4,4 +4,5 @@
 Fork this repo and create ota.xml on your own github.
 
 Reminders:
-* Update vidwhal_n.xml with new filename, URL & Changelog details.
+* Update vidwhal_n.xml with new filename, URL details.
+* Upload latest Changelog info
