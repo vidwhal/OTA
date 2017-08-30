@@ -2,7 +2,7 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Stable>
         <hlte>
-            <Filename>RR-N-v5.8.4-20170905-hlte-Unofficial-vidwhal.zip</Filename>
+            <Filename>RR-N-v5.8.4-20170830-hlte-Unofficial-vidwhal</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
@@ -19,7 +19,7 @@
     </Stable>
     <Stable>
         <hltetmo>
-            <Filename>RR-N-v5.8.4-20170901-hltetmo-Unofficial-vidwhal.zip</Filename>
+            <Filename>RR-N-v5.8.4-20170830-hltetmo-Unofficial-vidwhal</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
@@ -36,7 +36,7 @@
     </Stable>
     <Stable>
         <hltechn>
-            <Filename>RR-N-v5.8.4-20170901-hltechn-Unofficial-vidwhal.zip</Filename>
+            <Filename>RR-N-v5.8.4-20170830-hltechn-Unofficial-vidwhal</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
