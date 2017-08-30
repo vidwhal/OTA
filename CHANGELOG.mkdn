@@ -2,45 +2,95 @@
  ▼ Resurrection Remix Nougat Ver 5.8.4 Changelog
 
 
- ▼ 08/27/2017
+ ▼ 08/30/2017
 
+
+ ▪ project packages/apps/Settings/
+ ▪ 41bd796 Update maintainer for Galaxy Note 3 Qcom (#854)
+
+ ▼ 08/29/2017
+
+
+ ▪ project device/samsung/klte/
+ ▪ d57316c klte: Use new full defconfig from new kernel
+ ▪ 6bf0843 klte: libinit: Update build fingerprint for SM-G900F
+
+ ▪ project vendor/samsung/
+ ▪ 7a070e9 klte-common: Update blobs
+
+ ▼ 08/28/2017
+
+
+ ▪ project device/samsung/hlte-common/
+ ▪ fb1586c Revert "bluetooth: Our kernel is missing CLOCK_BOOTTIME_ALARM (alarmtimer)"
+
+ ▪ project device/samsung/klte-common/
+ ▪ 33b1555 Revert "bluetooth: Our kernel is missing CLOCK_BOOTTIME_ALARM (alarmtimer)"
 
  ▪ project frameworks/base/
 
  ▪ project packages/apps/DUI/
 
+ ▪ project packages/apps/Jelly/
+ ▪ 8e71ae9 Jelly: Remove the SwipeRefreshLayout
+
  ▪ project packages/apps/OmniSwitch/
 
  ▪ project packages/apps/Settings/
 
- ▼ 08/26/2017
+ ▼ 08/27/2017
 
-
- ▪ project device/samsung/hlte-common/
- ▪ e63b025 hlte-common: proprietary-files: Drop libdsi_netctrl.so from list
 
  ▪ project device/samsung/i9100/
  ▪ 240e5ee i9100: Update extract-files and setup-makefiles
 
  ▪ project device/samsung/klte-common/
+ ▪ 4f9d6d7 klte-common: Start using android_kernel_samsung_msm8974
  ▪ c2173e9 klte-common: proprietary-files: Pin hexed sensors.msm8974.so
 
- ▪ project packages/apps/Eleven/
- ▪ 943d43e Eleven: Fix restoring user settings
-
- ▪ project packages/apps/UnifiedEmail/
- ▪ 2dd00df Email: Fix led notification settings
-
- ▪ project packages/services/Telephony/
- ▪ 6e6fe97 Allow to ignore presentation indicator of outgoing calls [3/3]
+ ▪ project kernel/samsung/msm8974/
+ ▪ 0f4307b arm: defconfig: Enable Android alarm driver for {h,k}lte*
+ ▪ 4109495 thermal: msm_thermal: Migrate to alarmtimer interface
+ ▪ e4a3250 sensorhub: Migrate to alarmtimer interface
+ ▪ e6dd4c2 battery: sec_battery: Migrate to alarmtimer interface
+ ▪ 3d016aa staging: alarm-dev: Implement compat_ioctl support
+ ▪ e99badd timerfd: add alarm timers
+ ▪ 3193c19 switch timerfd_[sg]ettime(2) to fget_light()
+ ▪ 58517be rtc: pm8xxx: move device_init_wakeup() before rtc_register
+ ▪ c07ac63 alarmtimer: add rtc irq support for alarm
+ ▪ b96d397 alarmtimer: Rename alarmtimer_remove to alarmtimer_dequeue
+ ▪ f36d5f5 staging: alarm-dev: information leak in alarm_ioctl()
+ ▪ e026e3a staging: alarm-dev: Refactor alarm-dev ioctl code in prep for compat_ioctl
+ ▪ 568dc72 staging: alarm-dev: Drop pre Android 1.0 _OLD ioctls
+ ▪ 039a7eb Staging: android: Alarm driver cleanups
+ ▪ 0ae54f0 staging: android: alarm: remove unnecessary goto statement
+ ▪ dc5a76d staging: Android: Fix NULL pointer related warning in alarm-dev.c file
+ ▪ 3d95893 Staging: android: alarm: Rename pr_alarm to alarm_dbg
+ ▪ 81e812a staging: android-alarm: Switch from wakelocks to wakeup sources
+ ▪ d2342b4 Revert "rtc: alarm: init power_on_alarm_lock mutex in alarmtimer_rtc_timer_init"
+ ▪ 242b7bd rtc: Remove alarm driver/interface
+ ▪ 33e0e6e Revert "HACK: time: Disable alarmtimer"
+ ▪ e355b88 Revert "staging: Remove logger and alarm-dev from android Makefile"
+ ▪ e893de3 Revert "staging: Remove the Android alarm-dev driver"
 
  ▪ project vendor/samsung/
  ▪ aa0dcd9 klte-common: Hex sensors.msm8974.so to quiet LightSensor logspam
- ▪ 03a8682 sensors: Hex edit the sensors hal to remove excesive logging
- ▪ 84223a5 k3gxx: update proprietary files
 
- ▼ 08/25/2017
+ ▼ 08/26/2017
 
+
+ ▪ project device/samsung/hlte/
+ ▪ be798e0 hlte: Use new full defconfig from new kernel
+
+ ▪ project device/samsung/hlte-common/
+ ▪ 6fb37f2 hlte-common: Start using android_kernel_samsung_msm8974
+ ▪ e63b025 hlte-common: proprietary-files: Drop libdsi_netctrl.so from list
+
+ ▪ project device/samsung/hltechn/
+ ▪ 1f6795d hltechn: Use new full defconfig from new kernel
+
+ ▪ project device/samsung/hltetmo/
+ ▪ 505d588 hltetmo: Use new full defconfig from new kernel
 
  ▪ project frameworks/base/
  ▪ 756f3e0 Allow to ignore presentation indicator of outgoing calls [1/3]
@@ -55,30 +105,44 @@
  ▪ project frameworks/native/
  ▪ 9cb6681 Merge remote-tracking branch 'remotes/laos/cm-14.1' into HEAD
 
+ ▪ project kernel/samsung/msm8974/
+ ▪ c6b642e arm: defconfig: Import full defconfigs for klte builds
+ ▪ 84785b2 arm: defconfig: Import full defconfigs for hlte builds
+
+ ▪ project packages/apps/Eleven/
+ ▪ 943d43e Eleven: Fix restoring user settings
+
+ ▪ project packages/apps/UnifiedEmail/
+ ▪ 2dd00df Email: Fix led notification settings
+
+ ▪ project packages/services/Telephony/
+ ▪ 6e6fe97 Allow to ignore presentation indicator of outgoing calls [3/3]
+
+ ▪ project vendor/samsung/
+ ▪ 03a8682 sensors: Hex edit the sensors hal to remove excesive logging
+ ▪ 84223a5 k3gxx: update proprietary files
+
+ ▼ 08/25/2017
+
+
  ▪ project frameworks/opt/telephony/
  ▪ b231815 Allow to ignore presentation indicator of outgoing calls [2/3]
+
+ ▪ project kernel/samsung/msm8974/
+ ▪ 04bdbb9 msm: camera: Make headers compatible with both LL and MM drivers
+ ▪ ef391fe msm: Add Kconfig/Makefile entries to select LL/MM camera drivers
+ ▪ 9977671 msm: camera_ll: Update local include path refs
+ ▪ 0cf4ff0 msm: Import camera driver for LL userspace blobs
+ ▪ e8ce255 scripts: kconfig: Get rid of Samsung additions to conf.c
+ ▪ 1de6bb4 firmware: Import/Update ssp_stm32f.fw.ihex from hlte kernel
+ ▪ 23ab246 sensorhub: stm32f: Import/Update from hlte kernel
+ ▪ a90a15d arm: dts: msm8974: Selected import/update from hlte kernel
 
  ▼ 08/24/2017
 
 
+ ▪ project kernel/samsung/msm8974/
+ ▪ cc7d5bc kernel/sys.c: ifndef out PR_SET_TIMERSLACK_PID case for H-projects
+
  ▪ project packages/apps/Settings/
  ▪ 3c8b4d4 Responsible arrangement for the Seed device.  (#851)
-
- ▼ 08/22/2017
-
-
- ▪ project hardware/qcom/audio-caf/msm8998/
- ▪ eba183e Merge tag 'LA.UM.5.7.r1-10500-8x98.0' into cm-14.1-caf-8998
-
- ▼ 08/21/2017
-
-
- ▪ project device/samsung/galaxys2-common/
- ▪ 4a03a75 galaxys2-common: camera: Fix scene-mode capabilities
-
- ▪ project packages/apps/Jelly/
- ▪ 2a6aa75 Fix NPE.
-
- ▪ project packages/apps/Settings/
- ▪ 14513f5 Update s7 edge maintainer
-
