@@ -2,62 +2,79 @@
  ▼ Resurrection Remix Nougat Ver 5.8.4 Changelog
 
 
- ▼ 09/04/2017
+ ▼ 09/11/2017
 
 
- ▪ project packages/apps/SetupWizard/
- ▪ f7d9926 SetupWizard: Fix the accessibility services gesture
+ ▪ project packages/apps/TvSettings/
+ ▪ acace0c Use new updater activity name for update button
 
- ▪ project packages/apps/Snap/
- ▪ fef825d Snap: fix highspeed and high-framerate video recording
-
- ▼ 09/03/2017
+ ▼ 09/10/2017
 
 
- ▪ project device/samsung/i9100/
- ▪ 69f6332 I9100: Track my hardware repo
+ ▪ project hardware/qcom/audio-caf/msm8916/
+ ▪ 76a0188 Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.24' into cm-14.1-caf-8916
 
- ▼ 09/02/2017
+ ▪ project hardware/qcom/audio-caf/msm8960/
+ ▪ 9d1af8a aenc-aac: bounds checking
 
-
- ▪ project packages/apps/SetupWizard/
- ▪ 77ef790 SetupWizard: Remove Themes related code
-
- ▪ project vendor/samsung/
- ▪ ba6e186 apq8084-common: update blobs to CQG2
-
- ▼ 09/01/2017
+ ▼ 09/09/2017
 
 
- ▪ project packages/resources/devicesettings/
- ▪ ff0aa81 Add strings for devices' custom gesture handlers
-
- ▼ 08/31/2017
-
-
- ▪ project packages/apps/Settings/
- ▪ 84d2690 Asus Zenfone 3 (Z012D) Maintainer (#859)
- ▪ 67faee0 Piccolo Maintainer (#858)
+ ▪ project vendor/cm/
+ ▪ 78774cb Update Magisk to 14.0 and MagiskMansager to 5.3.0 (#99)
 
  ▪ project vendor/samsung/
- ▪ 40a9476 klte{,chn}duo*: Regen makefiles
+ ▪ b912b0f v1awifi: Updated the license from Lineage to LineageOS
+ ▪ 11a61be Add v1awifi vendor files
 
- ▼ 08/30/2017
+ ▼ 09/08/2017
+
+
+ ▪ project frameworks/base/
+ ▪ fd3a9e3 Merge pull request #208 from BernardoBas/nougat
+ ▪ cf0fd01 Fix not to disable the GPS prematurely
+
+ ▪ project hardware/qcom/audio-caf/msm8994/
+ ▪ cda376e Merge remote-tracking branch 'caf/LA.BF64.1.2.3_rb1.16' into cm-14.1-caf-8994
+
+ ▪ project hardware/qcom/display-caf/msm8994/
+ ▪ 39bc982 Merge remote-tracking branch 'caf/LA.BF64.1.2.3_rb1.16' into cm-14.1-caf-8994
+
+ ▪ project hardware/qcom/media-caf/msm8994/
+ ▪ 5142d75 Merge remote-tracking branch 'caf/LA.BF64.1.2.3_rb1.16' into cm-14.1-caf-8994
+
+ ▪ project packages/apps/Settings/
+ ▪ 924a9c6 Add J5H to the list (#864)
+
+ ▼ 09/07/2017
 
 
  ▪ project packages/apps/Settings/
- ▪ 7b502c0 D851 Maintainer (#855)
+ ▪ 2683f89 I've changed my name (#862)
 
- ▼ 08/29/2017
+ ▪ project vendor/samsung/
+ ▪ 23a26c7 serrano: Remove unused libfactoryutil.so
+
+ ▼ 09/06/2017
 
 
- ▪ project device/samsung/klte/
- ▪ d57316c klte: Use new full defconfig from new kernel
- ▪ 6bf0843 klte: libinit: Update build fingerprint for SM-G900F
+ ▪ project vendor/samsung/
+ ▪ 2e53be8 gtesqltespr: Remove prebuilt ril
 
- ▪ project packages/apps/Jelly/
- ▪ 5f4c6b0 Jelly: Add elevation effect to searchBar
+ ▼ 09/05/2017
 
- ▪ project packages/apps/Settings/
- ▪ 41bd796 Update maintainer for Galaxy Note 3 Qcom (#854)
+
+ ▪ project vendor/samsung/
+ ▪ e657fb2 gprimeltexx: Remove prebuilt ril
+ ▪ 9037e02 gprimeltespr: Remove prebuilt ril
+ ▪ 2b5ce29 gprimelte: Remove prebuilt ril
+ ▪ 263c7bb j7ltespr: nuke Mobicore blobs
+ ▪ 188f86e j7ltespr: remove prebuilt RIL blobs
+ ▪ 4028f6e gprimeltexx: Remove nfc_test firmware
+ ▪ 60a60d9 msm8916-common: Remove rfs access
+ ▪ 3178f43 j7ltespr: Hexedit sec-ril libs to allow audioserver connections
+ ▪ 198aefd gprimeltexx: Hexedit sec-ril libs to allow audioserver connections
+ ▪ dea8b0c gprimeltespr: Hexedit sec-ril libs to allow audioserver connections
+ ▪ 5965a9c gprimelte: Hexedit sec-ril libs to allow audioserver connections
+ ▪ ba66f9c j7lte: update blobs from latest stock release
 
