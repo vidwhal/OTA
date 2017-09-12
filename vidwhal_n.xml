@@ -2,11 +2,11 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Stable>
         <hlte>
-            <Filename>RR-N-v5.8.4-20170904-hlte-Unofficial-vidwhal</Filename>
+            <Filename>RR-N-v5.8.4-20170911-hlte-Official-vidwhal</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download latest RR build">https://www.androidfilehost.com/?fid=745425885120759973</RomUrl>
+                description="Download latest RR build">https://www.androidfilehost.com/?fid=673368273298985054</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
@@ -19,11 +19,11 @@
     </Stable>
     <Stable>
         <hltetmo>
-            <Filename>RR-N-v5.8.4-20170904-hltetmo-Unofficial-vidwhal</Filename>
+            <Filename>RR-N-v5.8.4-20170911-hltetmo-Official-vidwhal</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download latest RR build">https://www.androidfilehost.com/?fid=889764386195927392</RomUrl>
+                description="Download latest RR build">https://www.androidfilehost.com/?fid=961840155545594971</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
@@ -36,11 +36,11 @@
     </Stable>
     <Stable>
         <hltechn>
-            <Filename>RR-N-v5.8.4-20170904-hltechn-Unofficial-vidwhal</Filename>
+            <Filename>RR-N-v5.8.4-20170911-hltechn-Official-vidwhal</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download latest RR build">https://www.androidfilehost.com/?fid=817550096634797099</RomUrl>
+                description="Download latest RR build">https://www.androidfilehost.com/?fid=889764386195929055</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
