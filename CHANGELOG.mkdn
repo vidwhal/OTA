@@ -2,79 +2,236 @@
  ▼ Resurrection Remix Nougat Ver 5.8.4 Changelog
 
 
+ ▼ 09/17/2017
+
+
+ ▪ project android/
+ ▪ f0c3b1f manifest: switch to our forks of several repos
+
+ ▪ project build/
+ ▪ f6958ef Updating Security String to 2017-09-05 Bug:63846344
+
+ ▪ project external/skia/
+ ▪ 878b9da Defend against ICOs with large BMPs embedded DO NOT MERGE
+
+ ▪ project external/sonivox/
+ ▪ 188ae17 Fix compiler warnings in sonivox and enable -Werror.
+
+ ▪ project frameworks/av/
+ ▪ eeff3f6 Merge remote-tracking branch 'lineage/cm-14.1' into HEAD
+
+ ▪ project frameworks/base/
+ ▪ bb68d19 Back-port fixes for b/62196835
+ ▪ cbce7ff Don't disable the GPS prematurely
+ ▪ 8503dcf PrivateStorageInfo: Exclude primary physical volume total space
+ ▪ fe5307e Keyguard: Change fingerprint listening behavior
+
+ ▪ project hardware/samsung/
+ ▪ 298215c audio: Fix WBS sample rate usage
+
+ ▪ project kernel/samsung/msm8974/
+ ▪ 26e3e93 arm: defconfig: Enable BFQ scheduler for {h,k}lte*
+ ▪ b672e62 bfq-sched: Forcefully lookup entities when the cache is inconsistent
+ ▪ b60ff55 block, bfq: add Early Queue Merge (EQM) to BFQ-v7r8 for 3.4.0
+ ▪ ea82975 block: introduce the BFQ-v7r8 I/O sched for 3.4
+ ▪ d2e91f6 block: cgroups, kconfig, build bits for BFQ-v7r8-3.4
+ ▪ 37aa79e ANDROID: sdcardfs: Add missing break
+ ▪ 1fd7400 ANDROID: Sdcardfs: Move gid derivation under flag
+ ▪ fb3e95e ANDROID: mnt: Fix freeing of mount data
+
+ ▪ project packages/apps/DUI/
+
+ ▪ project packages/apps/Dialer/
+
+ ▪ project packages/apps/Messaging/
+ ▪ e0708ed Merge remote-tracking branch 'lineage/cm-14.1' into HEAD
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/Settings/
+ ▪ 6d05ff9 Back-port ag/2491664
+ ▪ 2214a57 AppOpsDetails: Generate correct summary when changing list prefs
+ ▪ ac086f6 Settings: Allow devices to provide remote gesture preferences
+ ▪ 1b1f6ea Settings: Fix internal storage summary for non-emulated storage devices
+ ▪ 4776440 Settings: Always show Privacy Guard permissions
+ ▪ 02a6349 AppOps: Switch to an HashMap
+ ▪ a3bbfda Settings: Add a shortcut icon for carrier selection
+ ▪ cb1ab8b AppOps: Redesign
+ ▪ 3a0e238 Revert "Settings[Wifi]: fix the input invalid length for WEP encryption."
+
+ ▼ 09/16/2017
+
+
+ ▪ project external/libavc/
+ ▪ 2170933 Decoder: Fixed allocation of pv_map_ref_idx_to_poc_buf.
+ ▪ 871e2ff Decoder: Fixed overflow in refernce list creation.
+ ▪ 73ff61b Initialize DPB structures to valid values.
+ ▪ 1a4a25a Added error check for output buffer size.
+
+ ▪ project external/libhevc/
+ ▪ 2f28765 Limit boundary PU sizes in case of errors
+ ▪ 3008a9a Fix array size for hrd parameters
+ ▪ d2b7822 Check number of output buffers and sizes
+ ▪ 8e3fe3b Return error for invalid crop parameters
+
+ ▪ project external/libvpx/
+ ▪ 50bde27 DO NOT MERGE libvpx: Cherry-pick 8b4c315 from upstream
+
+ ▪ project external/sonivox/
+ ▪ afc7e48 Fix interpolator
+
+ ▪ project external/sqlite/
+ ▪ f55bb7e DO NOT MERGE - fix FTS3 column pointer handling
+
+ ▪ project external/tremolo/
+ ▪ 0000b2b Use heap instead of alloca in res012.c
+
+ ▪ project frameworks/av/
+ ▪ be42248 MPEG4Source: fix fragmented read.
+ ▪ ac561ef stagefright: fix crash due to bad timestamp index
+ ▪ 47f7228 stagefright: check aac_frame_length to prevent infinite loop
+ ▪ 708ca76 MediaPlayerService: fix access of mPlayer in client
+ ▪ 20a8bdc audio effects: filter reserved effect commands
+ ▪ 1f8cd83 MPEG4Extractor: ensure returned status is checked.
+ ▪ 09ebf66 DO NOT MERGE Check frame handle validity before freeing buffer.
+ ▪ ae74db2 Change MPEG2 reinit Error Handling
+ ▪ 6e05adf Track: Check buffer size of static tracks
+ ▪ e0b8295 MPEG4Extractor: check size for yrrc box
+ ▪ 7a84ae8 AudioFlinger: Fix memory allocation for client-less tracks
+ ▪ b1c91bc Notify Errors Appropriately from SoftMPEG2
+ ▪ 6dff427 EffectBundle: Check value size for get preset name
+ ▪ 3fcd8ac Fix TOCTOU problem in libstagefright_soft_aacenc
+
+ ▪ project frameworks/minikin/
+ ▪ 440e10a Reject unsorted cmap entries. DO NOT MERGE
+
+ ▪ project hardware/broadcom/wlan/
+ ▪ 71b070f net: wireless: bcmdhd: update bcm4354/4356 FW (7.35.101.8)
+
+ ▪ project hardware/qcom/audio-caf/msm8916/
+ ▪ 7a797d4 Equalizer: Check value size for get preset name
+
+ ▪ project hardware/qcom/audio-caf/msm8952/
+ ▪ 0bf8b30 Equalizer: Check value size for get preset name
+
+ ▪ project hardware/qcom/audio-caf/msm8960/
+ ▪ 01e8f3b Equalizer: Check value size for get preset name
+
+ ▪ project hardware/qcom/audio-caf/msm8974/
+ ▪ f5a8e83 Equalizer: Check value size for get preset name
+
+ ▪ project hardware/qcom/audio-caf/msm8994/
+ ▪ 7da7e5e Equalizer: Check value size for get preset name
+
+ ▪ project hardware/qcom/audio-caf/msm8996/
+ ▪ 53c7f74 Equalizer: Check value size for get preset name
+
+ ▪ project hardware/qcom/audio-caf/msm8998/
+ ▪ c736bfe Equalizer: Check value size for get preset name
+
+ ▪ project hardware/qcom/audio/default/
+ ▪ 3f7e702 Equalizer: Check value size for get preset name
+
+ ▪ project kernel/samsung/msm8974/
+ ▪ 7fa8de5 misc: Import SM-G900F kernel source code
+ ▪ cd84983 net: wireless: bcmdhd: fix for IOVAR GET failed
+
+ ▪ project packages/apps/Messaging/
+ ▪ 87f81d9 37742976 - Catch bad gifs
+
+ ▪ project packages/apps/Nfc/
+ ▪ f20aedf Add READ_EXTERNAL_STORAGE for file based Uri while beaming.
+
+ ▪ project vendor/samsung/
+ ▪ 931afb0 Corrent vendor files list
+
+ ▼ 09/15/2017
+
+
+ ▪ project kernel/samsung/msm8974/
+ ▪ 4145c3e ANDROID: ion: Protect kref from userspace manipulation
+ ▪ cfce084 mm: Fix incorrect type conversion for size during dma allocation
+ ▪ b6b140f defconfig: gud: Remove gud driver
+ ▪ 1cd9f76 msm: gud: Remove gud driver
+ ▪ cb708cb USB: f_qc_rndis: Prevent use-after-free for _rndis_qc
+ ▪ b0305a8 usb: gadget: qc_rndis: Clean up code to allow patches to apply cleanly
+ ▪ ccb763f f_qc_rndis: Check config or cdev is NULL in before accessing
+ ▪ f4c99c1 IKHSS7-18791 msm:fix the list usage in msm_bus_dbg
+
+ ▪ project system/bt/
+ ▪ 215d434 Add missing extension length check while parsing BNEP control packets
+ ▪ a61aaf1 Free p_pending_data from tBNEP_CONN to avoid potential memory leaks
+ ▪ 922d50b Add a missing check for PAN buffer size before copying data
+ ▪ c6f7f86 Add missing packet length checks while parsing BNEP control packets
+ ▪ 7e30b79 Add missing continuation offset check for SDP continuation requests
+ ▪ 0700e5b Disable PAN Reverse Tethering when connection originated by the Remote
+ ▪ 8825957 Allocate buffers of the right size when BT_HDR is included
+
+ ▼ 09/13/2017
+
+
+ ▪ project kernel/samsung/msm8974/
+ ▪ d4a5fec decnet: dn_rtmsg: Improve input length sanitization in dnrmg_receive_user_skb
+ ▪ 434975e fuse: initialize the flock flag in fuse_file on allocation
+ ▪ 3f8d4ea af_unix: Add sockaddr length checks before accessing sa_family in bind and connect handlers
+ ▪ 08fb81d caif: Add sockaddr length check before accessing sa_family in connect handler
+ ▪ b696b58 nfc: Fix the sockaddr length sanitization in llcp_sock_connect
+ ▪ e24eaac nfc: Ensure presence of required attributes in the activate_target handler
+ ▪ 9ce07c4 NFC: Add sockaddr length checks before accessing sa_family in bind handlers
+ ▪ 01d9ed4 af_iucv: Move sockaddr length checks to before accessing sa_family in bind and connect handlers
+ ▪ 710b594 Bluetooth: Add sockaddr length checks before accessing sa_family in bind and connect handlers
+ ▪ e002d88 kernel/sysctl_binary.c: check name array length in deprecated_sysctl_warning()
+ ▪ 605c0f1 lowmemorykiller: Account for unevictable pages in vmpressure notifier
+ ▪ abb3f3f lowmemorykiller: Account for unevictable pages
+ ▪ 21583d3 lowmemorykiller: Set TIF_MEMDIE before send kill sig
+ ▪ 7eeb3cf lowmemorykiller: avoid false adaptive LMK triggers
+ ▪ 5d1aba9 lowmemorykiller: adapt to vmpressure
+ ▪ 7ec4ebc lowmemorykiller: Do proper NULL checks
+ ▪ 706fcc1 lowmemorykiller: Run the lowmemory notifier when killing
+ ▪ 79003c5 mm: Add notifier framework for showing memory
+ ▪ 7ceb7a6 mm: vmpressure: allow in-kernel clients to subscribe for events
+ ▪ 4e2fa12 lowmemorykiller: Dump out slab state information
+ ▪ d4a8cac lowmemorykiller: enhance debug information
+ ▪ 85ea423 mm, oom: make dump_tasks public
+ ▪ b08debd lowmemorykiller: use for_each_thread instead of buggy while_each_thread
+ ▪ d46f061 lowmemorykiller: Don't count swap cache pages twice
+ ▪ a2fad03 lowmemorykiller: Account for highmem during kswapd reclaim
+ ▪ 1fdfb58 lowmemorykiller: Remove Samsung sprinkles
+ ▪ a8149a6 Bluetooth: Properly check L2CAP config option output buffer length
+
+ ▼ 09/12/2017
+
+
+ ▪ project hardware/qcom/media-caf/msm8960/
+ ▪ b28bc21 BACKPORT: mm-video: venc: Protect buffer from being freed while accessing
+ ▪ f65fe19 BACKPORT: mm-video: vdec: Avoid processing ETBs/FTBs in invalid states
+
+ ▪ project kernel/samsung/msm8974/
+ ▪ 93710f3 ASoC: msm: remove unused msm-compr-q6-v2
+ ▪ 00297f0 wcnss: fix the potential memory leak and heap overflow
+ ▪ 9bb0ad2 msm: camera: isp: fix for out of bound access array
+ ▪ 9ee05b2 msm: camera: Allow driver file to be opend only once.
+ ▪ 63825e6 ipx: call ipxitf_put() in ioctl error path
+ ▪ 7093fa0 xfrm: policy: check policy direction value
+ ▪ cccbc1d msm: camera: fix off-by-one overflow in msm_isp_get_bufq
+ ▪ f14ae2e msm: camera: isp: protect driver from using invalid bufq
+ ▪ ff4af6b ASoC: msm: qdsp6v2: extend validation of virtual address
+ ▪ e2f90a1 net: wireless: bcmdhd: adding boundary check in wl_notify_rx_mgmt_frame
+ ▪ 4350b3b net: wireless: bcmdhd: adding boudary check in wl_escan_handler
+ ▪ a78c2a7 qcdev: Check the digest length during the SHA operations
+
+ ▪ project packages/apps/Snap/
+ ▪ 853e8ee WideAnglePanoramaUI: Show switcher on Stop Capture
+
  ▼ 09/11/2017
 
 
+ ▪ project hardware/qcom/media-caf/msm8974/
+ ▪ 209a13c mm-video-v4l2: venc: Protect buffer from being freed while accessing
+
+ ▪ project packages/apps/Jelly/
+ ▪ 5f25616 Jelly: Reuse DateFormat instance in HistoryAdapter.
+
  ▪ project packages/apps/TvSettings/
  ▪ acace0c Use new updater activity name for update button
-
- ▼ 09/10/2017
-
-
- ▪ project hardware/qcom/audio-caf/msm8916/
- ▪ 76a0188 Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.24' into cm-14.1-caf-8916
-
- ▪ project hardware/qcom/audio-caf/msm8960/
- ▪ 9d1af8a aenc-aac: bounds checking
-
- ▼ 09/09/2017
-
-
- ▪ project vendor/cm/
- ▪ 78774cb Update Magisk to 14.0 and MagiskMansager to 5.3.0 (#99)
-
- ▪ project vendor/samsung/
- ▪ b912b0f v1awifi: Updated the license from Lineage to LineageOS
- ▪ 11a61be Add v1awifi vendor files
-
- ▼ 09/08/2017
-
-
- ▪ project frameworks/base/
- ▪ fd3a9e3 Merge pull request #208 from BernardoBas/nougat
- ▪ cf0fd01 Fix not to disable the GPS prematurely
-
- ▪ project hardware/qcom/audio-caf/msm8994/
- ▪ cda376e Merge remote-tracking branch 'caf/LA.BF64.1.2.3_rb1.16' into cm-14.1-caf-8994
-
- ▪ project hardware/qcom/display-caf/msm8994/
- ▪ 39bc982 Merge remote-tracking branch 'caf/LA.BF64.1.2.3_rb1.16' into cm-14.1-caf-8994
-
- ▪ project hardware/qcom/media-caf/msm8994/
- ▪ 5142d75 Merge remote-tracking branch 'caf/LA.BF64.1.2.3_rb1.16' into cm-14.1-caf-8994
-
- ▪ project packages/apps/Settings/
- ▪ 924a9c6 Add J5H to the list (#864)
-
- ▼ 09/07/2017
-
-
- ▪ project packages/apps/Settings/
- ▪ 2683f89 I've changed my name (#862)
-
- ▪ project vendor/samsung/
- ▪ 23a26c7 serrano: Remove unused libfactoryutil.so
-
- ▼ 09/06/2017
-
-
- ▪ project vendor/samsung/
- ▪ 2e53be8 gtesqltespr: Remove prebuilt ril
-
- ▼ 09/05/2017
-
-
- ▪ project vendor/samsung/
- ▪ e657fb2 gprimeltexx: Remove prebuilt ril
- ▪ 9037e02 gprimeltespr: Remove prebuilt ril
- ▪ 2b5ce29 gprimelte: Remove prebuilt ril
- ▪ 263c7bb j7ltespr: nuke Mobicore blobs
- ▪ 188f86e j7ltespr: remove prebuilt RIL blobs
- ▪ 4028f6e gprimeltexx: Remove nfc_test firmware
- ▪ 60a60d9 msm8916-common: Remove rfs access
- ▪ 3178f43 j7ltespr: Hexedit sec-ril libs to allow audioserver connections
- ▪ 198aefd gprimeltexx: Hexedit sec-ril libs to allow audioserver connections
- ▪ dea8b0c gprimeltespr: Hexedit sec-ril libs to allow audioserver connections
- ▪ 5965a9c gprimelte: Hexedit sec-ril libs to allow audioserver connections
- ▪ ba66f9c j7lte: update blobs from latest stock release
 
