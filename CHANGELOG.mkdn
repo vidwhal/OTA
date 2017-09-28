@@ -2,236 +2,230 @@
  ▼ Resurrection Remix Nougat Ver 5.8.4 Changelog
 
 
- ▼ 09/17/2017
+ ▼ 09/28/2017
 
 
- ▪ project android/
- ▪ f0c3b1f manifest: switch to our forks of several repos
+ ▪ project vendor/cmsdk/
+ ▪ 8f4f039 [3/3] cmsdk: add burnIn protection setting
+ ▪ 10d64e7 Revert "cmsdk: Don't change ring volume or mode if DND is enabled"
+ ▪ 253a12e cmsdk: Run in core apps only for poweroff alarm boot
+ ▪ f4da7ec Make CMParts a protected component manager
+ ▪ a5a86a8 cmsdk: Don't change ring volume or mode if DND is enabled
+ ▪ 6f9c3e4 cmsdk: Use intent extradata for WiFi triggers
+ ▪ cf42384 cmsdk: Disable unused services
 
- ▪ project build/
- ▪ f6958ef Updating Security String to 2017-09-05 Bug:63846344
+ ▼ 09/27/2017
 
- ▪ project external/skia/
- ▪ 878b9da Defend against ICOs with large BMPs embedded DO NOT MERGE
 
- ▪ project external/sonivox/
- ▪ 188ae17 Fix compiler warnings in sonivox and enable -Werror.
+ ▪ project device/samsung/hlte-common/
+ ▪ cc8fc4e hlte-common: sepolicy: Clean-up policy for external sdcards
 
- ▪ project frameworks/av/
- ▪ eeff3f6 Merge remote-tracking branch 'lineage/cm-14.1' into HEAD
-
- ▪ project frameworks/base/
- ▪ bb68d19 Back-port fixes for b/62196835
- ▪ cbce7ff Don't disable the GPS prematurely
- ▪ 8503dcf PrivateStorageInfo: Exclude primary physical volume total space
- ▪ fe5307e Keyguard: Change fingerprint listening behavior
-
- ▪ project hardware/samsung/
- ▪ 298215c audio: Fix WBS sample rate usage
+ ▪ project device/samsung/klte-common/
+ ▪ d66d9d9 klte-common: sepolicy: Clean-up policy for external sdcards
 
  ▪ project kernel/samsung/msm8974/
- ▪ 26e3e93 arm: defconfig: Enable BFQ scheduler for {h,k}lte*
- ▪ b672e62 bfq-sched: Forcefully lookup entities when the cache is inconsistent
- ▪ b60ff55 block, bfq: add Early Queue Merge (EQM) to BFQ-v7r8 for 3.4.0
- ▪ ea82975 block: introduce the BFQ-v7r8 I/O sched for 3.4
- ▪ d2e91f6 block: cgroups, kconfig, build bits for BFQ-v7r8-3.4
- ▪ 37aa79e ANDROID: sdcardfs: Add missing break
- ▪ 1fd7400 ANDROID: Sdcardfs: Move gid derivation under flag
- ▪ fb3e95e ANDROID: mnt: Fix freeing of mount data
+ ▪ 819766e scsi: sg: init open_rel_lock mutex
+
+ ▼ 09/26/2017
+
+
+ ▪ project external/libnfc-nci/
+ ▪ 257864a pn54x: Don't default to pn551 if BOARD_NFC_CHIPSET isn't set
+
+ ▼ 09/25/2017
+
+
+ ▪ project frameworks/base/
+ ▪ 95ba21f PhoneWindowManager: Block screenshots when pocket lock is showing
+ ▪ 51c0f6f PocketService: Adjust light sensor rate to 400ms
+ ▪ 31e374f ActivityManager: Remove POWER_OFF_ALARM intent leftover
+ ▪ 8cf55f1 SystemServer: Don't start widget service when it is alarm boot
+ ▪ 8f62033 Recents: Add accessibility descriptions for lock ImageViews
+ ▪ 65748c4 SystemUI: Revert some Tuner changes
+ ▪ 71bfe49 DUtils: Migrate from broadcasts to API for some action handling [1/2]
+ ▪ f99120e ColorEngine: Fixup themes for our customizations[2/3] *Update Primary and secondary coolors *Update TM Fab bg *Update Stroke accent colors *Thanks to ALtan for control_checkable_material theme issue
+ ▪ e90fec8 Revert "FWB:Update default theme to Pixel Blue [1/2]"
+ ▪ a3d99a6 Themes: Expose manifest styles for themes
+ ▪ a3dab8d Bring back Pixel theme [1/2]
+ ▪ 27dc140 BrightnessSlider: Fix Slider thumb not theming to accent color
+ ▪ 90dfe02 Revert "sysui: New google pixel colors"
+ ▪ ad41af3 Revert "Base : Finalize the pixel theme and prepare for theme engine"
+ ▪ 5c1386f Revert "base: New google pixel colors"
+ ▪ ec7bf0d FWB:Update default theme to Pixel Blue [1/2]
+ ▪ 32ba76a Partially revert "ColorEngine: theme improvements/completeness"
+ ▪ 79a4136 ColorEngine: fix power menu instant theming
+ ▪ 69ca41e TileAdapter: allow styling tile item decoration background
+ ▪ 98726ae ColorEngine: theme improvements/completeness
+ ▪ 2bf21f4 ColorEngine: fwb: keep changed resources footprint low
+ ▪ 17c72a1 ColorEngine: fwb: default to default primary/bg color
+ ▪ 3eca4dd ColorEngine: who wants orange if you can have amber [1/2]
+ ▪ 5b5e499 ColorEngine: fwb: default to teal color accent everywhere
+ ▪ 453e33b ColorEngine: default to teal color accent
+ ▪ ba42305 Introduce color engine.
+ ▪ d796bc5 Revert "FW: Use stock pixel color scheme & improve upcoming CMTE compatibility"
 
  ▪ project packages/apps/DUI/
-
- ▪ project packages/apps/Dialer/
-
- ▪ project packages/apps/Messaging/
- ▪ e0708ed Merge remote-tracking branch 'lineage/cm-14.1' into HEAD
+ ▪ b79ce98 DUI:Fix up accent colors with color engine[3/3]
 
  ▪ project packages/apps/OmniSwitch/
 
  ▪ project packages/apps/Settings/
- ▪ 6d05ff9 Back-port ag/2491664
- ▪ 2214a57 AppOpsDetails: Generate correct summary when changing list prefs
- ▪ ac086f6 Settings: Allow devices to provide remote gesture preferences
- ▪ 1b1f6ea Settings: Fix internal storage summary for non-emulated storage devices
- ▪ 4776440 Settings: Always show Privacy Guard permissions
- ▪ 02a6349 AppOps: Switch to an HashMap
- ▪ a3bbfda Settings: Add a shortcut icon for carrier selection
- ▪ cb1ab8b AppOps: Redesign
- ▪ 3a0e238 Revert "Settings[Wifi]: fix the input invalid length for WEP encryption."
+ ▪ 523231c Add Andres to About
+ ▪ 3c520f0 Settings:Fix up RR configurations theme with color engine[1/3]
+ ▪ bb8b8d3 ColorEngine: Settings: keep changed resources footprint low
+ ▪ 62b94cf ColorEngine: Settings: default to default primary/bg color
+ ▪ 2244d5d ColorEngine: Settings: default to pixel accent everywhere
+ ▪ fe2ff9f Settings: Make shortcut icon colors match settings accent
+ ▪ ec49047 Settings: PreviewPagerAdapter: copy the full theme
+ ▪ 3bbba44 Improve color selection preview
+ ▪ 316b3bb ColorEngine settings: show accent color selection on first open
+ ▪ 7c5a01e Settings: Support color engine
 
- ▼ 09/16/2017
+ ▪ project system/vold/
+ ▪ d8d5e6e Fix bug in cryptfs_verify_passwd with hardware disk encryption
+
+ ▪ project vendor/cm/
+ ▪ 889b570 Merge remote-tracking branch 'rr/nougat' into HEAD
+ ▪ 3b31d8f Final version for N -> 5.8.5 \m/
+ ▪ 6d81c3d vendor: sepolicy: Add Color Engine policy
+ ▪ 813d067 Revert "Revert "vendor: cm: sepolicy: Allow rw-access to system_app_data_file""
+ ▪ c0a7af1 Remove all traces of CMTE policy
+
+ ▼ 09/24/2017
 
 
- ▪ project external/libavc/
- ▪ 2170933 Decoder: Fixed allocation of pv_map_ref_idx_to_poc_buf.
- ▪ 871e2ff Decoder: Fixed overflow in refernce list creation.
- ▪ 73ff61b Initialize DPB structures to valid values.
- ▪ 1a4a25a Added error check for output buffer size.
+ ▪ project device/samsung/hlte-common/
+ ▪ 3377a31 hlte-common: Use kernel exfat
 
- ▪ project external/libhevc/
- ▪ 2f28765 Limit boundary PU sizes in case of errors
- ▪ 3008a9a Fix array size for hrd parameters
- ▪ d2b7822 Check number of output buffers and sizes
- ▪ 8e3fe3b Return error for invalid crop parameters
+ ▪ project device/samsung/klte-common/
+ ▪ bf67c96 klte-common: Use kernel exfat
+ ▪ 9b03812 klte-common: enable burnIn protection support
 
- ▪ project external/libvpx/
- ▪ 50bde27 DO NOT MERGE libvpx: Cherry-pick 8b4c315 from upstream
+ ▪ project kernel/samsung/msm8974/
+ ▪ f10987d diag: dci: Add protection while querying event status
+ ▪ c5b5937 msm: ipa: Prevent multiple header deletion from user space
+ ▪ eeacb548 Prevent potential double frees in sg driver
+ ▪ 35ebe65 fs: exfat: Update to version 1.2.24
 
- ▪ project external/sonivox/
- ▪ afc7e48 Fix interpolator
+ ▼ 09/23/2017
 
- ▪ project external/sqlite/
- ▪ f55bb7e DO NOT MERGE - fix FTS3 column pointer handling
 
- ▪ project external/tremolo/
- ▪ 0000b2b Use heap instead of alloca in res012.c
+ ▪ project packages/apps/ResurrectionStats/
+ ▪ 53fe045 Const: 5.8.5
+
+ ▪ project vendor/cm/
+ ▪ ed3107d RR: v5.8.5
+
+ ▼ 09/22/2017
+
+
+ ▪ project frameworks/base/
+
+ ▪ project packages/apps/Settings/
+
+ ▼ 09/21/2017
+
+
+ ▪ project hardware/cyanogen/
+ ▪ da0e259 livedisplay: Add msm8998 and sdm660 as SDM targets
+
+ ▪ project packages/apps/FlipFlap/
+ ▪ 484ba97 FlipFlap: Specify a qualified user for start/stop service
+ ▪ d27b7eb FlipFlap: Allow to set dot ratio
+
+ ▼ 09/20/2017
+
+
+ ▪ project frameworks/native/
+ ▪ 47d7223 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_native into HEAD
+
+ ▪ project packages/apps/Eleven/
+
+ ▪ project system/extras/su/
+ ▪ 11730a5 correct delivering process return code to caller
+
+ ▼ 09/19/2017
+
 
  ▪ project frameworks/av/
- ▪ be42248 MPEG4Source: fix fragmented read.
- ▪ ac561ef stagefright: fix crash due to bad timestamp index
- ▪ 47f7228 stagefright: check aac_frame_length to prevent infinite loop
- ▪ 708ca76 MediaPlayerService: fix access of mPlayer in client
- ▪ 20a8bdc audio effects: filter reserved effect commands
- ▪ 1f8cd83 MPEG4Extractor: ensure returned status is checked.
- ▪ 09ebf66 DO NOT MERGE Check frame handle validity before freeing buffer.
- ▪ ae74db2 Change MPEG2 reinit Error Handling
- ▪ 6e05adf Track: Check buffer size of static tracks
- ▪ e0b8295 MPEG4Extractor: check size for yrrc box
- ▪ 7a84ae8 AudioFlinger: Fix memory allocation for client-less tracks
- ▪ b1c91bc Notify Errors Appropriately from SoftMPEG2
- ▪ 6dff427 EffectBundle: Check value size for get preset name
- ▪ 3fcd8ac Fix TOCTOU problem in libstagefright_soft_aacenc
+ ▪ 74ff75e Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_av into HEAD
 
- ▪ project frameworks/minikin/
- ▪ 440e10a Reject unsorted cmap entries. DO NOT MERGE
-
- ▪ project hardware/broadcom/wlan/
- ▪ 71b070f net: wireless: bcmdhd: update bcm4354/4356 FW (7.35.101.8)
-
- ▪ project hardware/qcom/audio-caf/msm8916/
- ▪ 7a797d4 Equalizer: Check value size for get preset name
-
- ▪ project hardware/qcom/audio-caf/msm8952/
- ▪ 0bf8b30 Equalizer: Check value size for get preset name
-
- ▪ project hardware/qcom/audio-caf/msm8960/
- ▪ 01e8f3b Equalizer: Check value size for get preset name
-
- ▪ project hardware/qcom/audio-caf/msm8974/
- ▪ f5a8e83 Equalizer: Check value size for get preset name
-
- ▪ project hardware/qcom/audio-caf/msm8994/
- ▪ 7da7e5e Equalizer: Check value size for get preset name
-
- ▪ project hardware/qcom/audio-caf/msm8996/
- ▪ 53c7f74 Equalizer: Check value size for get preset name
-
- ▪ project hardware/qcom/audio-caf/msm8998/
- ▪ c736bfe Equalizer: Check value size for get preset name
-
- ▪ project hardware/qcom/audio/default/
- ▪ 3f7e702 Equalizer: Check value size for get preset name
+ ▪ project hardware/qcom/fm/
 
  ▪ project kernel/samsung/msm8974/
- ▪ 7fa8de5 misc: Import SM-G900F kernel source code
- ▪ cd84983 net: wireless: bcmdhd: fix for IOVAR GET failed
+ ▪ d29996d mm: vmpressure: fix backport
 
- ▪ project packages/apps/Messaging/
- ▪ 87f81d9 37742976 - Catch bad gifs
+ ▪ project packages/apps/AudioFX/
 
- ▪ project packages/apps/Nfc/
- ▪ f20aedf Add READ_EXTERNAL_STORAGE for file based Uri while beaming.
+ ▪ project packages/apps/Bluetooth/
 
- ▪ project vendor/samsung/
- ▪ 931afb0 Corrent vendor files list
+ ▪ project packages/apps/Calendar/
 
- ▼ 09/15/2017
+ ▪ project packages/apps/Camera2/
 
+ ▪ project packages/apps/CellBroadcastReceiver/
 
- ▪ project kernel/samsung/msm8974/
- ▪ 4145c3e ANDROID: ion: Protect kref from userspace manipulation
- ▪ cfce084 mm: Fix incorrect type conversion for size during dma allocation
- ▪ b6b140f defconfig: gud: Remove gud driver
- ▪ 1cd9f76 msm: gud: Remove gud driver
- ▪ cb708cb USB: f_qc_rndis: Prevent use-after-free for _rndis_qc
- ▪ b0305a8 usb: gadget: qc_rndis: Clean up code to allow patches to apply cleanly
- ▪ ccb763f f_qc_rndis: Check config or cdev is NULL in before accessing
- ▪ f4c99c1 IKHSS7-18791 msm:fix the list usage in msm_bus_dbg
+ ▪ project packages/apps/CertInstaller/
 
- ▪ project system/bt/
- ▪ 215d434 Add missing extension length check while parsing BNEP control packets
- ▪ a61aaf1 Free p_pending_data from tBNEP_CONN to avoid potential memory leaks
- ▪ 922d50b Add a missing check for PAN buffer size before copying data
- ▪ c6f7f86 Add missing packet length checks while parsing BNEP control packets
- ▪ 7e30b79 Add missing continuation offset check for SDP continuation requests
- ▪ 0700e5b Disable PAN Reverse Tethering when connection originated by the Remote
- ▪ 8825957 Allocate buffers of the right size when BT_HDR is included
+ ▪ project packages/apps/Email/
 
- ▼ 09/13/2017
+ ▪ project packages/apps/EmergencyInfo/
 
+ ▪ project packages/apps/Exchange/
 
- ▪ project kernel/samsung/msm8974/
- ▪ d4a5fec decnet: dn_rtmsg: Improve input length sanitization in dnrmg_receive_user_skb
- ▪ 434975e fuse: initialize the flock flag in fuse_file on allocation
- ▪ 3f8d4ea af_unix: Add sockaddr length checks before accessing sa_family in bind and connect handlers
- ▪ 08fb81d caif: Add sockaddr length check before accessing sa_family in connect handler
- ▪ b696b58 nfc: Fix the sockaddr length sanitization in llcp_sock_connect
- ▪ e24eaac nfc: Ensure presence of required attributes in the activate_target handler
- ▪ 9ce07c4 NFC: Add sockaddr length checks before accessing sa_family in bind handlers
- ▪ 01d9ed4 af_iucv: Move sockaddr length checks to before accessing sa_family in bind and connect handlers
- ▪ 710b594 Bluetooth: Add sockaddr length checks before accessing sa_family in bind and connect handlers
- ▪ e002d88 kernel/sysctl_binary.c: check name array length in deprecated_sysctl_warning()
- ▪ 605c0f1 lowmemorykiller: Account for unevictable pages in vmpressure notifier
- ▪ abb3f3f lowmemorykiller: Account for unevictable pages
- ▪ 21583d3 lowmemorykiller: Set TIF_MEMDIE before send kill sig
- ▪ 7eeb3cf lowmemorykiller: avoid false adaptive LMK triggers
- ▪ 5d1aba9 lowmemorykiller: adapt to vmpressure
- ▪ 7ec4ebc lowmemorykiller: Do proper NULL checks
- ▪ 706fcc1 lowmemorykiller: Run the lowmemory notifier when killing
- ▪ 79003c5 mm: Add notifier framework for showing memory
- ▪ 7ceb7a6 mm: vmpressure: allow in-kernel clients to subscribe for events
- ▪ 4e2fa12 lowmemorykiller: Dump out slab state information
- ▪ d4a8cac lowmemorykiller: enhance debug information
- ▪ 85ea423 mm, oom: make dump_tasks public
- ▪ b08debd lowmemorykiller: use for_each_thread instead of buggy while_each_thread
- ▪ d46f061 lowmemorykiller: Don't count swap cache pages twice
- ▪ a2fad03 lowmemorykiller: Account for highmem during kswapd reclaim
- ▪ 1fdfb58 lowmemorykiller: Remove Samsung sprinkles
- ▪ a8149a6 Bluetooth: Properly check L2CAP config option output buffer length
+ ▪ project packages/apps/FMRadio/
 
- ▼ 09/12/2017
+ ▪ project packages/apps/FlipFlap/
 
-
- ▪ project hardware/qcom/media-caf/msm8960/
- ▪ b28bc21 BACKPORT: mm-video: venc: Protect buffer from being freed while accessing
- ▪ f65fe19 BACKPORT: mm-video: vdec: Avoid processing ETBs/FTBs in invalid states
-
- ▪ project kernel/samsung/msm8974/
- ▪ 93710f3 ASoC: msm: remove unused msm-compr-q6-v2
- ▪ 00297f0 wcnss: fix the potential memory leak and heap overflow
- ▪ 9bb0ad2 msm: camera: isp: fix for out of bound access array
- ▪ 9ee05b2 msm: camera: Allow driver file to be opend only once.
- ▪ 63825e6 ipx: call ipxitf_put() in ioctl error path
- ▪ 7093fa0 xfrm: policy: check policy direction value
- ▪ cccbc1d msm: camera: fix off-by-one overflow in msm_isp_get_bufq
- ▪ f14ae2e msm: camera: isp: protect driver from using invalid bufq
- ▪ ff4af6b ASoC: msm: qdsp6v2: extend validation of virtual address
- ▪ e2f90a1 net: wireless: bcmdhd: adding boundary check in wl_notify_rx_mgmt_frame
- ▪ 4350b3b net: wireless: bcmdhd: adding boudary check in wl_escan_handler
- ▪ a78c2a7 qcdev: Check the digest length during the SHA operations
-
- ▪ project packages/apps/Snap/
- ▪ 853e8ee WideAnglePanoramaUI: Show switcher on Stop Capture
-
- ▼ 09/11/2017
-
-
- ▪ project hardware/qcom/media-caf/msm8974/
- ▪ 209a13c mm-video-v4l2: venc: Protect buffer from being freed while accessing
+ ▪ project packages/apps/Gallery2/
 
  ▪ project packages/apps/Jelly/
- ▪ 5f25616 Jelly: Reuse DateFormat instance in HistoryAdapter.
+
+ ▪ project packages/apps/ManagedProvisioning/
+
+ ▪ project packages/apps/Nfc/
+
+ ▪ project packages/apps/Recorder/
+
+ ▪ project packages/apps/SetupWizard/
+
+ ▪ project packages/apps/Snap/
+
+ ▪ project packages/apps/Stk/
+
+ ▪ project packages/apps/Tag/
+
+ ▪ project packages/apps/Terminal/
+
+ ▪ project packages/apps/Trebuchet/
 
  ▪ project packages/apps/TvSettings/
- ▪ acace0c Use new updater activity name for update button
+
+ ▪ project packages/apps/UnifiedEmail/
+
+ ▪ project packages/inputmethods/LatinIME/
+
+ ▪ project packages/providers/CalendarProvider/
+
+ ▪ project packages/providers/ContactsProvider/
+
+ ▪ project packages/providers/DataUsageProvider/
+
+ ▪ project packages/providers/DownloadProvider/
+
+ ▪ project packages/providers/MediaProvider/
+
+ ▪ project packages/providers/TelephonyProvider/
+
+ ▪ project packages/resources/devicesettings/
+
+ ▪ project packages/screensavers/Basic/
+
+ ▪ project packages/screensavers/PhotoTable/
+
+ ▪ project packages/wallpapers/LivePicker/
+
+ ▪ project vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
+
+ ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
 
