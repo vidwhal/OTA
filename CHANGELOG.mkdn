@@ -2,230 +2,272 @@
  ▼ Resurrection Remix Nougat Ver 5.8.5 Changelog
 
 
- ▼ 09/28/2017
+ ▼ 10/08/2017
 
 
- ▪ project vendor/cmsdk/
- ▪ 8f4f039 [3/3] cmsdk: add burnIn protection setting
- ▪ 10d64e7 Revert "cmsdk: Don't change ring volume or mode if DND is enabled"
- ▪ 253a12e cmsdk: Run in core apps only for poweroff alarm boot
- ▪ f4da7ec Make CMParts a protected component manager
- ▪ a5a86a8 cmsdk: Don't change ring volume or mode if DND is enabled
- ▪ 6f9c3e4 cmsdk: Use intent extradata for WiFi triggers
- ▪ cf42384 cmsdk: Disable unused services
+ ▪ project hardware/ril/
+ ▪ d8fb8ff Fix multi sim support and warnings
 
- ▼ 09/27/2017
+ ▪ project hardware/ril-caf/
+ ▪ ef31609 Fix multi sim support and warnings
+
+ ▪ project kernel/samsung/msm8974/
+ ▪ ffe488f include: net: Fix merge derp
+
+ ▪ project packages/apps/Gallery2/
+ ▪ 947a320 Gallery: Kill media effect dialog on movies
+ ▪ 121bd84 Gallery2: Fix crash when muting a video
+ ▪ e171921 Fix gallery crash when trimming video
+
+ ▼ 10/07/2017
+
+
+ ▪ project device/samsung/klte-common/
+ ▪ a2b7c30 klte-common: Add GPS configuration for China
+
+ ▪ project hardware/qcom/audio-caf/msm8994/
+ ▪ e91a5f0 Merge remote-tracking branch 'caf/LA.BF64.1.2.3_rb1.17' into cm-14.1-caf-8994
+
+ ▪ project hardware/samsung/
+ ▪ aa98f7a Remove obsolete values-be translations
+
+ ▪ project system/bt/
+ ▪ b882eee Fix allocating buffers of the right size when BT_HDR is included
+
+ ▼ 10/06/2017
 
 
  ▪ project device/samsung/hlte-common/
- ▪ cc8fc4e hlte-common: sepolicy: Clean-up policy for external sdcards
+ ▪ 2eabb76 hlte-common: Refactor common gps configurations into gps.conf
+ ▪ 0f20110 hlte-common: Cleanup blob list a bit more
+ ▪ 9f69e64 hlte-common: Add support for TWRP
 
  ▪ project device/samsung/klte-common/
- ▪ d66d9d9 klte-common: sepolicy: Clean-up policy for external sdcards
+ ▪ 3c04b58 klte-common: init: Disable Adapative LMK
+ ▪ 353209b klte-common: Remove unused gps configurations
+ ▪ 2d60675 klte-common: Refactor common gps configurations into gps.conf
+ ▪ b7d9a63 klte-common: Update TWRP makefile/compatibility
 
- ▪ project kernel/samsung/msm8974/
- ▪ 819766e scsi: sg: init open_rel_lock mutex
+ ▪ project vendor/samsung/
+ ▪ de6109f hlte-common: Remove obsolete blobs
+ ▪ 434db4b hlte-common: Add TWRP support blobs
 
- ▼ 09/26/2017
+ ▼ 10/05/2017
 
 
- ▪ project external/libnfc-nci/
- ▪ 257864a pn54x: Don't default to pn551 if BOARD_NFC_CHIPSET isn't set
+ ▪ project android/
+ ▪ 516714f manifest: track our own dnsmasq and libmpeg2
+ ▪ 6afec8e cm: Remove unused projects
 
- ▼ 09/25/2017
+ ▪ project build/
+ ▪ cb361ed [DO NOT MERGE] Update platform security string to 2017-10-05 in nyc-dev Bug:64896113 (cherry picked from commit 1517f3d2da27eae798a3ac765096251914f9b119)
+ ▪ 9727f4f [DO NOT MERGE] Update platform security string to 2017-10-01 in nyc-dev Bug:64896113 (cherry picked from commit 73ab80dec9df8966bf660725dc1a942d9c1f324e)
+ ▪ d6b4f42 core: config: Use host bison if requested
+ ▪ 68898f0 Fix warning with AAPT2 and LOCAL_STATIC_ANDROID_LIBRARIES
 
+ ▪ project device/samsung/galaxys2-common/
+ ▪ f255f1b galaxys2-common: Enable LED-notification via BLN
+
+ ▪ project frameworks/av/
+ ▪ f9bce6f Merge remote-tracking branch 'lineage/cm-14.1' into HEAD
 
  ▪ project frameworks/base/
- ▪ 95ba21f PhoneWindowManager: Block screenshots when pocket lock is showing
- ▪ 51c0f6f PocketService: Adjust light sensor rate to 400ms
- ▪ 31e374f ActivityManager: Remove POWER_OFF_ALARM intent leftover
- ▪ 8cf55f1 SystemServer: Don't start widget service when it is alarm boot
- ▪ 8f62033 Recents: Add accessibility descriptions for lock ImageViews
- ▪ 65748c4 SystemUI: Revert some Tuner changes
- ▪ 71bfe49 DUtils: Migrate from broadcasts to API for some action handling [1/2]
- ▪ f99120e ColorEngine: Fixup themes for our customizations[2/3] *Update Primary and secondary coolors *Update TM Fab bg *Update Stroke accent colors *Thanks to ALtan for control_checkable_material theme issue
- ▪ e90fec8 Revert "FWB:Update default theme to Pixel Blue [1/2]"
- ▪ a3d99a6 Themes: Expose manifest styles for themes
- ▪ a3dab8d Bring back Pixel theme [1/2]
- ▪ 27dc140 BrightnessSlider: Fix Slider thumb not theming to accent color
- ▪ 90dfe02 Revert "sysui: New google pixel colors"
- ▪ ad41af3 Revert "Base : Finalize the pixel theme and prepare for theme engine"
- ▪ 5c1386f Revert "base: New google pixel colors"
- ▪ ec7bf0d FWB:Update default theme to Pixel Blue [1/2]
- ▪ 32ba76a Partially revert "ColorEngine: theme improvements/completeness"
- ▪ 79a4136 ColorEngine: fix power menu instant theming
- ▪ 69ca41e TileAdapter: allow styling tile item decoration background
- ▪ 98726ae ColorEngine: theme improvements/completeness
- ▪ 2bf21f4 ColorEngine: fwb: keep changed resources footprint low
- ▪ 17c72a1 ColorEngine: fwb: default to default primary/bg color
- ▪ 3eca4dd ColorEngine: who wants orange if you can have amber [1/2]
- ▪ 5b5e499 ColorEngine: fwb: default to teal color accent everywhere
- ▪ 453e33b ColorEngine: default to teal color accent
- ▪ ba42305 Introduce color engine.
- ▪ d796bc5 Revert "FW: Use stock pixel color scheme & improve upcoming CMTE compatibility"
+ ▪ 04405fc Fix security hole in GateKeeperResponse.
+ ▪ 7fd68e0 Enforce policy for camera gesture in keyguard
+ ▪ ff5b93c Revert "Camera: ignore torch status update for aux or compsite camera"
+
+ ▪ project hardware/samsung/
+ ▪ e3999d3 liblights: Add led-blink support for BLN
+
+ ▪ project packages/apps/PackageInstaller/
+ ▪ 2ca0f5d PackageInstaller: Show current & new version Forward ported to Marshmallow By: @dwitherell Forward ported to Nougat By: @BeansTown106
+ ▪ 3912d1b Fix PackageInstaller FC when tapping on a downloaded apk notification 2
+ ▪ 42868f0 PackageInstaller: Add tint mode to icons
+
+ ▪ project packages/apps/Settings/
+ ▪ 25b490d Disabling the activate button when paused
+ ▪ a2ff665 AppOpsState: Hide undeclared Privacy Guard OPs
+
+ ▼ 10/04/2017
+
+
+ ▪ project device/samsung/hlte-common/
+ ▪ 5ebdbed hlte-common: Nuke some unused libs
+
+ ▪ project device/samsung/klte-common/
+ ▪ 0850adf klte-common: Nuke some unused libs
+
+ ▪ project device/samsung/msm8974-common/
+ ▪ 681c57a msm8974: Remove libdivxdrmdecrypt
+
+ ▪ project kernel/samsung/msm8974/
+ ▪ fd73781 msm: mdss: Buffer overflow while processing gamut table data
+ ▪ 001458a diag: Synchronize command registration table access
+ ▪ 21d39f6 msm: sps: Fix race condition in SPS debugfs APIs
+ ▪ 44af112 crypto: msm: Fix several race condition issues in crypto drivers
+ ▪ 2930b42 net: wireless: bcmdhd: remove SDIO debug IOVARs causing out of bounds
+ ▪ ed1213b ion: disable system contig heap
+
+ ▪ project vendor/samsung/
+ ▪ 17b9f66 hlte-common: Remove deprecated blobs
+ ▪ 34ac4bf klte-common: Remove some unused libs
+
+ ▼ 10/03/2017
+
+
+ ▪ project external/dnsmasq/
+ ▪ 41e4b42 Add extra (size_t) cast to avoid compiler warning.
+ ▪ 0b7daf3 Make dnsmasq more stable.
+
+ ▪ project external/libhevc/
+ ▪ 42469df Fix slice decrement for skipped slices
+ ▪ 6f57834 Ensure CTB size > 16 for clips with tiles and width/height >= 4096
+
+ ▪ project external/libmpeg2/
+ ▪ c1edfa4 Fixed Memory Overflow Errors
+
+ ▪ project external/tremolo/
+ ▪ 166d5a3 Fix out of bounds access in codebook processing
+
+ ▪ project frameworks/av/
+ ▪ 019e77c Fix 'potential memory leak' compiler warning.
+ ▪ 223131d Check buffer size in useBuffer in software components
+ ▪ 2ca6228 stagefright: avoid buffer overflow in base64 decoder
+ ▪ 49e724e Add EFFECT_CMD_SET_PARAM parameter checking to Downmix and Reverb
+ ▪ 8511171 Fix memory leak in OggExtractor
+ ▪ f1e2df1 Skip track if verification fails
+
+ ▪ project hardware/ril/
+ ▪ 4609708 DO NOT MERGE Fix security vulnerability in pre-O rild code.
+
+ ▪ project hardware/ril-caf/
+ ▪ cc408d7 DO NOT MERGE Fix security vulnerability in pre-O rild code.
+
+ ▪ project libcore/
+ ▪ aa4fd2e Fix failing FileTest#test_canonicalCachesAreOff()
+ ▪ c1a58e9 Disable File.getCanonicalPath caches.
+
+ ▪ project packages/apps/PackageInstaller/
+ ▪ cec631f DO NOT MERGE Disable overlays while installer is resumed
+
+ ▼ 10/02/2017
+
+
+ ▪ project android/
+ ▪ 46fafaf manifest: use updated svox tag to fix picotts
+ ▪ 3aef973 Switch deqp, pdfium and speex to our forks
+ ▪ 208f9df cm: Remove libphonenumbergoogle
+
+ ▪ project frameworks/base/
 
  ▪ project packages/apps/DUI/
- ▪ b79ce98 DUI:Fix up accent colors with color engine[3/3]
+
+ ▪ project packages/apps/Dialer/
 
  ▪ project packages/apps/OmniSwitch/
 
- ▪ project packages/apps/Settings/
- ▪ 523231c Add Andres to About
- ▪ 3c520f0 Settings:Fix up RR configurations theme with color engine[1/3]
- ▪ bb8b8d3 ColorEngine: Settings: keep changed resources footprint low
- ▪ 62b94cf ColorEngine: Settings: default to default primary/bg color
- ▪ 2244d5d ColorEngine: Settings: default to pixel accent everywhere
- ▪ fe2ff9f Settings: Make shortcut icon colors match settings accent
- ▪ ec49047 Settings: PreviewPagerAdapter: copy the full theme
- ▪ 3bbba44 Improve color selection preview
- ▪ 316b3bb ColorEngine settings: show accent color selection on first open
- ▪ 7c5a01e Settings: Support color engine
-
- ▪ project system/vold/
- ▪ d8d5e6e Fix bug in cryptfs_verify_passwd with hardware disk encryption
-
- ▪ project vendor/cm/
- ▪ 889b570 Merge remote-tracking branch 'rr/nougat' into HEAD
- ▪ 3b31d8f Final version for N -> 5.8.5 \m/
- ▪ 6d81c3d vendor: sepolicy: Add Color Engine policy
- ▪ 813d067 Revert "Revert "vendor: cm: sepolicy: Allow rw-access to system_app_data_file""
- ▪ c0a7af1 Remove all traces of CMTE policy
-
- ▼ 09/24/2017
-
-
- ▪ project device/samsung/hlte-common/
- ▪ 3377a31 hlte-common: Use kernel exfat
-
- ▪ project device/samsung/klte-common/
- ▪ bf67c96 klte-common: Use kernel exfat
- ▪ 9b03812 klte-common: enable burnIn protection support
-
- ▪ project kernel/samsung/msm8974/
- ▪ f10987d diag: dci: Add protection while querying event status
- ▪ c5b5937 msm: ipa: Prevent multiple header deletion from user space
- ▪ eeacb548 Prevent potential double frees in sg driver
- ▪ 35ebe65 fs: exfat: Update to version 1.2.24
-
- ▼ 09/23/2017
-
+ ▪ project packages/apps/ResurrectionOTA/
 
  ▪ project packages/apps/ResurrectionStats/
- ▪ 53fe045 Const: 5.8.5
-
- ▪ project vendor/cm/
- ▪ ed3107d RR: v5.8.5
-
- ▼ 09/22/2017
-
-
- ▪ project frameworks/base/
 
  ▪ project packages/apps/Settings/
+ ▪ 4f80840 About: fix Andres email
 
- ▼ 09/21/2017
+ ▪ project packages/services/OmniJaws/
 
-
- ▪ project hardware/cyanogen/
- ▪ da0e259 livedisplay: Add msm8998 and sdm660 as SDM targets
-
- ▪ project packages/apps/FlipFlap/
- ▪ 484ba97 FlipFlap: Specify a qualified user for start/stop service
- ▪ d27b7eb FlipFlap: Allow to set dot ratio
-
- ▼ 09/20/2017
+ ▼ 10/01/2017
 
 
- ▪ project frameworks/native/
- ▪ 47d7223 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_native into HEAD
+ ▪ project hardware/qcom/audio-caf/msm8916/
+ ▪ 512197f Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.26' into cm-14.1-caf-8916
 
- ▪ project packages/apps/Eleven/
-
- ▪ project system/extras/su/
- ▪ 11730a5 correct delivering process return code to caller
-
- ▼ 09/19/2017
-
-
- ▪ project frameworks/av/
- ▪ 74ff75e Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_av into HEAD
+ ▪ project hardware/qcom/display-caf/msm8916/
+ ▪ b9fc743 Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.26' into cm-14.1-caf-8916
 
  ▪ project hardware/qcom/fm/
+ ▪ 2d2b4b0 Remove obsolete values-be translations
+
+ ▪ project hardware/qcom/media-caf/msm8916/
+ ▪ 21d80df Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.26' into cm-14.1-caf-8916
 
  ▪ project kernel/samsung/msm8974/
- ▪ d29996d mm: vmpressure: fix backport
+ ▪ 4b861dd sdcardfs: Backport and use some 3.10 hlist/hash macros
 
  ▪ project packages/apps/AudioFX/
+ ▪ 1cc2af6 Remove obsolete values-be translations
 
- ▪ project packages/apps/Bluetooth/
-
- ▪ project packages/apps/Calendar/
-
- ▪ project packages/apps/Camera2/
-
- ▪ project packages/apps/CellBroadcastReceiver/
-
- ▪ project packages/apps/CertInstaller/
+ ▪ project packages/apps/Eleven/
+ ▪ d9cbd6b Remove obsolete values-be translations
 
  ▪ project packages/apps/Email/
-
- ▪ project packages/apps/EmergencyInfo/
+ ▪ e9bc151 Remove obsolete values-be translations
 
  ▪ project packages/apps/Exchange/
+ ▪ 771eb3a Remove obsolete values-be translations
 
  ▪ project packages/apps/FMRadio/
+ ▪ 32b0fae Remove obsolete values-be translations
 
- ▪ project packages/apps/FlipFlap/
-
- ▪ project packages/apps/Gallery2/
-
- ▪ project packages/apps/Jelly/
-
- ▪ project packages/apps/ManagedProvisioning/
-
- ▪ project packages/apps/Nfc/
-
- ▪ project packages/apps/Recorder/
+ ▪ project packages/apps/Profiles/
+ ▪ b41416f Remove obsolete values-be translations
 
  ▪ project packages/apps/SetupWizard/
+ ▪ 712fb3a Remove obsolete values-be translations
 
  ▪ project packages/apps/Snap/
-
- ▪ project packages/apps/Stk/
-
- ▪ project packages/apps/Tag/
+ ▪ 50d00c0 Remove obsolete values-be translations
 
  ▪ project packages/apps/Terminal/
+ ▪ 736edf7 Remove obsolete values-be translations
 
  ▪ project packages/apps/Trebuchet/
-
- ▪ project packages/apps/TvSettings/
+ ▪ b49b2b1 Remove obsolete values-be translations
 
  ▪ project packages/apps/UnifiedEmail/
+ ▪ b1e649d Remove obsolete values-be translations
 
  ▪ project packages/inputmethods/LatinIME/
-
- ▪ project packages/providers/CalendarProvider/
-
- ▪ project packages/providers/ContactsProvider/
+ ▪ 04b2b3e Remove obsolete values-be translations
 
  ▪ project packages/providers/DataUsageProvider/
+ ▪ 6e3ea47 Remove obsolete values-be translations
 
- ▪ project packages/providers/DownloadProvider/
-
- ▪ project packages/providers/MediaProvider/
-
- ▪ project packages/providers/TelephonyProvider/
+ ▪ project packages/providers/WeatherProvider/
+ ▪ cc51ba5 Remove obsolete values-be translations
 
  ▪ project packages/resources/devicesettings/
+ ▪ 6c579a5 Remove obsolete values-be translations
 
- ▪ project packages/screensavers/Basic/
+ ▪ project vendor/qcom/opensource/bluetooth/
+ ▪ cd69373 Remove obsolete values-be translations
 
- ▪ project packages/screensavers/PhotoTable/
+ ▼ 09/30/2017
 
- ▪ project packages/wallpapers/LivePicker/
 
- ▪ project vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
+ ▪ project device/samsung/klte-common/
+ ▪ 1c19827 klte-common: proprietary-files: Update bluetooth firmware
 
- ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
+ ▪ project frameworks/base/
+ ▪ 3cc1a5a [1/4] SystemUI: add burnIn protection setting
+
+ ▪ project kernel/samsung/msm8974/
+ ▪ d1f73cf usb: gadget: mass_storage: added sysfs entry for cdrom to LUNs
+ ▪ 07df957 Add some gitignores
+ ▪ 91d1832 Fix standalone kernel compilation
+
+ ▪ project packages/apps/DUI/
+ ▪ 7180a95 DUI: add burnIn protection setting [4/4]
+
+ ▪ project packages/apps/Settings/
+ ▪ 47d0991 [2/4] Settings: add burnIn protection setting
+
+ ▪ project vendor/samsung/
+ ▪ 76e6e5a klte-common: Update blobs
+ ▪ bc81a3c klte-common: Update bluetooth firmware
+
+ ▼ 09/29/2017
+
+
+ ▪ project hardware/qcom/audio-caf/msm8994/
+ ▪ 6657fcf Merge AU_LINUX_ANDROID_LA.BF64.1.2.3_RB1.07.01.02.258.033 on remote branch
 
