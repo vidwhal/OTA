@@ -2,73 +2,202 @@
  ▼ Resurrection Remix Nougat Ver 5.8.5 Changelog
 
 
- ▼ 10/15/2017
+ ▼ 10/25/2017
 
 
- ▪ project vendor/samsung/
- ▪ e7e0ea3 klte-common: Update blobs
- ▪ 25e1ea7 kltedv: Hide spr support
-
- ▼ 10/14/2017
-
-
- ▪ project frameworks/base/
- ▪ 8fbd105 Core: Battery warning levels are inclusive, not exclusive
+ ▪ project packages/apps/PhoneCommon/
+ ▪ 1521367 Squashed support for multilanguage T9 dialer (2/2)
 
  ▪ project vendor/samsung/
- ▪ d071c6f apq8084-common: gps.conf: various fixes
- ▪ 0214e7e apq8084-common: update blobs to CQI4
+ ▪ ff3b703 Add serranoltespr (SPH-L520)
+ ▪ 8d40616 serrano: Move libaudcal.so to devices
+ ▪ e443d16 serranolteusc: Remove duplicate blobs that already exists in common
 
- ▼ 10/13/2017
+ ▼ 10/24/2017
 
-
- ▪ project packages/apps/PackageInstaller/
- ▪ 1593371 PackageInstaller: fix install button after merge of October ASB
-
- ▪ project packages/apps/SetupWizard/
- ▪ c3b2008 SetupWizard: Set min date to build date
-
- ▼ 10/12/2017
-
-
- ▪ project device/samsung/galaxys2-common/
- ▪ 6b14fe1 galaxys2-common: enable burnIn protection support
 
  ▪ project device/samsung/klte-common/
- ▪ f98d6e2 Revert "klte-common: init: Disable Adapative LMK"
+ ▪ e977716 klte-common: proprietary-files: Commonize shared radio blobs
+ ▪ f08a5db klte-common: Build libsecnativefeature and libsecril-client from source
+ ▪ a52ac56 klte-common: ril: add squash of OSS libsecnativefeature
+ ▪ 0ce39c7 KlteRIL: Cleanup RIL class
 
- ▼ 10/11/2017
+ ▪ project hardware/samsung/
+ ▪ c98cc60 libril: Fix multisim flags
+
+ ▪ project packages/apps/SetupWizard/
+ ▪ 356dcde [Fugu] Fix bluetooth setup loop
+ ▪ e7dce25 Revert "The bluetooth pairing page cannot be exited, disable it for now."
+
+ ▪ project vendor/samsung/
+ ▪ c99d5cb hltechn: Drop QC Framework blobs to
+ ▪ d031225 hlte-common: Restore selected blobs to N9005XXSGBQD5_N9005OJVGBPF1_XSI
+
+ ▼ 10/23/2017
 
 
- ▪ project kernel/samsung/msm8974/
- ▪ 8d8427c input: synaptics: put offset checks under mutex.
- ▪ bd74ece input: synaptics: add bounds checks for firmware id
- ▪ 9fcab4c input: synaptics: prevent sysfs races
- ▪ 16fab40 input: synaptics: defer sysfs creation during init
- ▪ 28cdafb input: synaptics: Add checks of user input data
- ▪ 0751b75 input: synaptics: allocate heap memory for buffer
- ▪ 1bef133 input: synaptics: allocate heap memory for temp buf
+ ▪ project device/samsung/klte/
+ ▪ adf0d6e klte: proprietary-files: Commonize shared radio blobs
+ ▪ 0ea7708 klte: proprietary-files: Drop libs to be built from source
 
- ▪ project packages/apps/Recorder/
- ▪ 084c5a0 Recorder: Advertise that we can record voice
+ ▪ project packages/apps/Dialer/
+ ▪ 692c0ef Merge pull request #3 from CyberWalkMaN/nougat
 
- ▼ 10/10/2017
+ ▪ project vendor/samsung/
+ ▪ 79ac787 klte*: Commonize shared radio-related blobs
+ ▪ 77a9247 klte*: Drop libs to be built from source
+
+ ▼ 10/22/2017
+
+
+ ▪ project hardware/qcom/bootctrl/
+ ▪ 462212d Add msm8953 to the filter
+
+ ▪ project hardware/qcom/fm/
+
+ ▪ project hardware/samsung/
+
+ ▪ project packages/apps/AudioFX/
+
+ ▪ project packages/apps/Calendar/
+
+ ▪ project packages/apps/Dialer/
+ ▪ 2514f37 Squashed support for multilanguage T9 dialer (1/2)
+ ▪ 04a303b Dialer: Provide upgrade path for removed lookup providers
+ ▪ d133d0b Dialer: Fix compilation warnings
+ ▪ 4044ee5 Dialer: Move padding from layout to spinner
+ ▪ 69cc1dc BUGBASH-612: do not send phone numbers to non-ssl sites for reverse/forward/people lookups
+
+ ▪ project packages/apps/Gallery2/
+
+ ▪ project packages/apps/Jelly/
+
+ ▪ project packages/apps/SetupWizard/
+
+ ▪ project packages/apps/Snap/
+
+ ▪ project packages/resources/devicesettings/
+
+ ▼ 10/21/2017
 
 
  ▪ project device/samsung/hlte-common/
- ▪ 555cfeb hlte-common: Disable sdcardfs
+ ▪ c62fc79 hlte-common: sepolicy: Add external fs permissions for shell
 
  ▪ project device/samsung/klte-common/
- ▪ 4f33809 klte-common: Disable sdcardfs
+ ▪ a5bfcfc klte-common: sepolicy: Add external fs permissions for shell
+
+ ▪ project vendor/samsung/
+ ▪ f12941d kltedv: Update SM-G900P blobs
+ ▪ b88e2ff kltedv: Update SM-G900I blobs
+
+ ▼ 10/20/2017
+
+
+ ▪ project device/samsung/hlte-common/
+ ▪ dca2106 hlte-common: releasetools: Use toybox's cp
+
+ ▪ project device/samsung/klte/
+ ▪ fc3f39c klte: Remove ro.ril.telephony.mqanelements from system.prop
+
+ ▪ project device/samsung/klte-common/
+ ▪ fbb95e0 klte-common: releasetools: Use toybox's cp
+
+ ▪ project packages/apps/Calendar/
+ ▪ de97bce Calendar: Show year info for week view
+
+ ▪ project system/sepolicy/
+ ▪ 4cfa94e sepolicy: Allow exfat and ntfs access for sdcard
+
+ ▪ project vendor/samsung/
+ ▪ 9dea794 kltechn: Update blobs
+ ▪ 7e20295 kltechnduo: Update blobs
+ ▪ 79555d9 klteduos: Update blobs
+ ▪ a5346c8 apq8084-common: Revert time_daemon to pre-CQE3 version
+
+ ▼ 10/19/2017
+
 
  ▪ project kernel/samsung/msm8974/
- ▪ 4a1486d msm: ADSPRPC: Buffer length truncated while validation
+ ▪ b3ae458 mac80211: use constant time comparison with keys
+ ▪ 0bf4879 crypto: memneq - fix for archs without efficient unaligned access
+ ▪ 5a1836f crypto: more robust crypto_memneq
+ ▪ a15ee07 crypto: crypto_memneq - add equality testing of memory regions w/o timing leaks
+ ▪ 290693b mac80211: accept key reinstall without changing anything
+ ▪ 236dd90 mac80211: clean up key freeing a bit
+ ▪ 071de64 ALSA: seq: Fix use-after-free at creating a port
+ ▪ 3581c86 UPSTREAM: x86/mm/32: Enable full randomization on i386 and X86_32
 
- ▼ 10/09/2017
+ ▼ 10/18/2017
 
 
- ▪ project kernel/samsung/msm8974/
- ▪ 1355fda lmk: Fix zcache cherry-pick merge derp
+ ▪ project device/samsung/hlte-common/
+ ▪ 0b7bc1f hlte-common: Use the OSS GPS HAL
+ ▪ e8ef9f8 hlte-common: Remove unused gps configurations
+ ▪ 8efb5de hlte-common: Import OSS GPS HAL
+
+ ▪ project frameworks/base/
+
+ ▪ project packages/apps/Dialer/
+
+ ▪ project packages/apps/PackageInstaller/
+
+ ▪ project packages/apps/ResurrectionOTA/
+
+ ▪ project packages/apps/ResurrectionStats/
 
  ▪ project packages/apps/Settings/
+
+ ▪ project vendor/samsung/
+ ▪ 7e96787 hlte-common: Pivot to source-based GPS
+
+ ▼ 10/17/2017
+
+
+ ▪ project device/samsung/hlte-common/
+ ▪ 2bdbc4c Revert "hlte-common: Disable sdcardfs"
+
+ ▪ project device/samsung/hltetmo/
+ ▪ bdf6381 hltetmo: Add support for hlteusc
+
+ ▪ project device/samsung/klte/
+ ▪ 2281eab klte: Update ro.telephony.default_network for klteacg/klteusc
+
+ ▪ project external/wpa_supplicant_8/
+ ▪ ac78917 Clear PMK length and check for this when deriving PTK
+ ▪ a630551 Add debug prints on PMK configuration in WPA supplicant
+ ▪ fbf7ecc WPA: Extra defense against PTK reinstalls in 4-way handshake
+ ▪ 5c64f90 Remove all PeerKey functionality
+ ▪ 726e02c Add MGMT_TX_STATUS_PROCESS command for testing purposes
+ ▪ cda7ff1 FT: Do not allow multiple Reassociation Response frames
+ ▪ 8fb5fe9 WNM: Ignore WNM-Sleep Mode Response without pending request
+ ▪ b6fccd0 TDLS: Reject TPK-TK reconfiguration
+ ▪ 04d9c3d Fix PTK rekeying to generate a new ANonce
+ ▪ bab71fa Prevent installation of an all-zero TK
+ ▪ 812c80a Extend protection of GTK/IGTK reinstallation of WNM-Sleep Mode cases
+ ▪ 4326a42 Prevent reinstallation of an already in-use group key
+ ▪ 3edbf11 hostapd: Avoid key reinstallation in FT handshake
+ ▪ b075172 Set EAPOL-Key Key Length field to 0 for group message 1/2 in RSN
+
+ ▪ project kernel/samsung/msm8974/
+ ▪ b7b98f8 nl80211: check for the required netlink attributes presence
+
+ ▪ project packages/apps/Calendar/
+ ▪ 56dc4a8 Calendar: Show week start and end in title for Week view
+
+ ▪ project vendor/samsung/
+ ▪ f46bbcb hltetmo: Import SM-N900R4 (usc) blobs
+ ▪ a5783ac hltevzw: Remove blobs
+ ▪ c24f8ae hlteusc: Remove blobs
+ ▪ 8bd3647 hltespr: Remove blobs
+
+ ▼ 10/16/2017
+
+
+ ▪ project packages/apps/Eleven/
+ ▪ 91a8a10 Eleven: Fix potential NPE when media server crashes
+ ▪ 119d774 Eleven: Don't use a sticky service
+
+ ▪ project vendor/samsung/
+ ▪ dfd5dbb kltespr: Restore blobs
 
