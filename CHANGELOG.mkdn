@@ -2,11 +2,26 @@
  ▼ Resurrection Remix Nougat Ver 5.8.5 Changelog
 
 
- ▼ 11/26/2017
+ ▼ 11/29/2017
+
+
+ ▪ project device/samsung/hltechn/
+ ▪ 41d6a67 hltechn: Look for the libinit defines file in our own directory
+
+ ▼ 11/27/2017
 
 
  ▪ project kernel/samsung/msm8974/
- ▪ d77d0aa Revert "wacom: Enable power saving mode by default"
+ ▪ 5873f2c wacom: Send custom keycodes when gestures are detected
+
+ ▼ 11/26/2017
+
+
+ ▪ project device/samsung/hlte-common/
+ ▪ 6e9bb24 hlte-common: Implement stylus gestures
+
+ ▪ project kernel/samsung/msm8974/
+ ▪ 0ba8cba msm: kgsl: Protect the event->handle with spinlock
 
  ▪ project packages/apps/Trebuchet/
  ▪ 3d80690 Trebuchet: Use ICU4J public APIs
@@ -16,9 +31,6 @@
 
  ▪ project frameworks/base/
  ▪ c4526f1 SystemUI: LiveDisplay tile
-
- ▪ project kernel/samsung/msm8974/
- ▪ 0ba8cba msm: kgsl: Protect the event->handle with spinlock
 
  ▼ 11/24/2017
 
@@ -38,68 +50,4 @@
  ▪ ebc13c3 apq8084-common: Drop netmgrd and libnetmgr.so
  ▪ b40b94a apq8084-common: Drop proprietary rild/libril.so in favor of OSS implementation
  ▪ 9bcdeb4 apq8084-common: drop libs build from source
-
- ▼ 11/22/2017
-
-
- ▪ project hardware/samsung/
- ▪ 5169e86 audio: End voice call in set_mode()
- ▪ f33a728 audio: Fix incall device switch handling
- ▪ 4b29ec9 audio: Improve code readability
- ▪ 7a82a0e audio: Initial support for amplifier HALs
-
- ▼ 11/20/2017
-
-
- ▪ project android/
- ▪ 3449c1d manifest: Track our bison fork
-
- ▪ project build/
- ▪ fcfb35c core: Prefix and build bison host executable if needed
- ▪ 99f49f2 Bump Security String to 2017-11-06
- ▪ 48144d6 Update Security String to 2017-11-05
-
- ▪ project frameworks/av/
- ▪ 6e3b0b8 Merge remote-tracking branch 'lineage/cm-14.1' into HEAD
-
- ▪ project frameworks/base/
- ▪ 82846aa DPC should not be allowed to grant development permission
- ▪ 1a6bf45 Add stub for setCursorVisibility
- ▪ 0d6573e Prevent deadlock when using always-on legacy VPNs
- ▪ 78cb021 Add powerhint function that accepts an array of data
-
- ▪ project frameworks/native/
- ▪ e73bb3b Merge remote-tracking branch 'laos/cm-14.1' into HEAD
-
- ▪ project packages/apps/DUI/
-
- ▪ project packages/apps/OmniSwitch/
-
- ▪ project packages/apps/PackageInstaller/
- ▪ cb4c853 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_packages_apps_PackageInstaller into HEAD
-
- ▪ project packages/apps/Settings/
- ▪ 12a150d AppOps: Add info if app doesn't request any blockable permissions
- ▪ ec8fe1e AppOps: Add icon for "Toggle cellular data"
- ▪ 8a9b8ef Settings: Correct german translation for 1 registered fingerprint
-
- ▪ project packages/services/OmniJaws/
-
- ▪ project system/core/
- ▪ 6664602 Merge branch 'cm-14.1' of git://github.com/LineageOS/android_system_core into HEAD
-
- ▪ project vendor/cm/
- ▪ 70c3e66 cm: build: kernel: Rework kernel module logic
- ▪ 72ba3c5 Updated apns for device bringup for S4 Mini - serranolteusc
- ▪ fb7503b Added more USA sensitive phone numbers
- ▪ 5c45440 cm/aosp/cafremote: Make variables local
- ▪ 473be65 envsetup: Fix cmremote for AOSP projects
- ▪ 0653d1d qcom_target: Commonize UM target HALs
- ▪ a193c32 charger: Remove battery_fail images
- ▪ a94bda1 Update initial attach for Tmo US
- ▪ aee9791 tasks: kernel: Kill unexisting wiki reference
- ▪ 409fbfa build: qcom_target: Add sdm660
- ▪ 692c081 Add Correios Celular (BR) APN
- ▪ ad2b018 Add WOM Internet/MMS (CL) apn
- ▪ 01d65f5 qcom: Allow setting custom audio, display, and media HALs
 
