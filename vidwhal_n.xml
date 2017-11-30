@@ -2,11 +2,11 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Stable>
         <hlte>
-            <Filename>RR-N-v5.8.5-20171126-hlte-Official-vidwhal</Filename>
+            <Filename>RR-N-v5.8.5-20171130-hlte-Official-vidwhal</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download latest RR build">https://www.androidfilehost.com/?fid=745849072291691269</RomUrl>
+                description="Download latest RR build">https://www.androidfilehost.com/?fid=962021903579495579</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
