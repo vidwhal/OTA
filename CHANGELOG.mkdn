@@ -2,7 +2,16 @@
  ▼ Resurrection Remix Nougat Ver 5.8.5 Changelog
 
 
- ▼ 11/29/2017
+ ▼ 11/30/2017
+
+
+ ▪ project kernel/samsung/msm8974/
+ ▪ 75e5009 Revert "wacom: Enable power saving mode by default"
+
+ ▪ project packages/apps/CMParts/
+ ▪ 11f0c87 CMParts: gestures: Update KeyHandler for API change
+
+ ▼ 11/28/2017
 
 
  ▪ project device/samsung/hltechn/
@@ -20,9 +29,6 @@
  ▪ project device/samsung/hlte-common/
  ▪ 6e9bb24 hlte-common: Implement stylus gestures
 
- ▪ project kernel/samsung/msm8974/
- ▪ 0ba8cba msm: kgsl: Protect the event->handle with spinlock
-
  ▪ project packages/apps/Trebuchet/
  ▪ 3d80690 Trebuchet: Use ICU4J public APIs
 
@@ -31,6 +37,9 @@
 
  ▪ project frameworks/base/
  ▪ c4526f1 SystemUI: LiveDisplay tile
+
+ ▪ project kernel/samsung/msm8974/
+ ▪ 0ba8cba msm: kgsl: Protect the event->handle with spinlock
 
  ▼ 11/24/2017
 
@@ -50,4 +59,13 @@
  ▪ ebc13c3 apq8084-common: Drop netmgrd and libnetmgr.so
  ▪ b40b94a apq8084-common: Drop proprietary rild/libril.so in favor of OSS implementation
  ▪ 9bcdeb4 apq8084-common: drop libs build from source
+
+ ▼ 11/22/2017
+
+
+ ▪ project hardware/samsung/
+ ▪ 5169e86 audio: End voice call in set_mode()
+ ▪ f33a728 audio: Fix incall device switch handling
+ ▪ 4b29ec9 audio: Improve code readability
+ ▪ 7a82a0e audio: Initial support for amplifier HALs
 
