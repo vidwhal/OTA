@@ -2,70 +2,192 @@
  ▼ Resurrection Remix Nougat Ver 5.8.5 Changelog
 
 
- ▼ 11/30/2017
+ ▼ 12/22/2017
+
+
+ ▪ project hardware/cyanogen/
+ ▪ f66b300 cmhw: Remove duplicate class
+
+ ▼ 12/21/2017
 
 
  ▪ project kernel/samsung/msm8974/
- ▪ 75e5009 Revert "wacom: Enable power saving mode by default"
+ ▪ 0f5e952 msm: mdss: hdmi: check up-bound of CEC frame size
+ ▪ 748038f msm: vidc: Allocate memory dynamically for debugfs info_reads
+ ▪ e8c5205 msm: sensor: Fix crash when ioctl VIDIOC_MSM_SENSOR_INIT_CFG
+ ▪ 65219a9 BACKPORT: dentry name snapshots
+ ▪ 49ddc78 Bluetooth: bnep: bnep_add_connection() should verify that it's dealing with l2cap socket
+ ▪ 9679a10 Bluetooth: cmtp: cmtp_add_connection() should verify that it's dealing with l2cap socket
+ ▪ d3750af msm8974: remove 'reboot edl' interface for security.
+ ▪ ed99cba ANDROID: scsi: Add segment checking in sg_read
+ ▪ 6df9653 UPSTREAM: ALSA: timer: Call notifier in the same spinlock
+ ▪ 17b412a UPSTREAM: ALSA: timer: Fix race between stop and interrupt
+ ▪ 7e04e8a UPSTREAM: ALSA: timer: Fix link corruption due to double start or stop
+ ▪ cfb2211 UPSTREAM: ALSA: timer: Code cleanup
+ ▪ 7ee70f7 BACKPORT: ALSA: timer: Fix race at concurrent reads
+ ▪ 58e4623 BACKPORT: ALSA: timer: Handle disconnection more safely
+ ▪ cf81afb UPSTREAM: ALSA: timer: Fix wrong instance passed to slave callbacks
+ ▪ b0e7f29 v4l2: Refactor, fix security bug in compat ioctl32
+ ▪ 9b9f599 android: binder: Move buffer out of area shared with user space
+ ▪ bf33a0e android: binder: Refactor prev and next buffer into a helper function
+ ▪ 41f5d7c BACKPORT: staging: android: fix missing a blank line after declarations
+ ▪ e5022a3 UPSTREAM: Staging: Android: removed an unnecessary else statement
+ ▪ 2da9c86 UPSTREAM: include/linux/mm.h: add PAGE_ALIGNED() helper
+ ▪ 2ba2889 ANDROID: usb: gadget: f_mtp: Return error if count is negative
+ ▪ ab16327 ANDROID: binder: fix OOB write in __binder_update_page_range
+ ▪ fd73750 binder: always allocate/map first BINDER_MIN_ALLOC pages
 
- ▪ project packages/apps/CMParts/
- ▪ 11f0c87 CMParts: gestures: Update KeyHandler for API change
-
- ▼ 11/28/2017
-
-
- ▪ project device/samsung/hltechn/
- ▪ 41d6a67 hltechn: Look for the libinit defines file in our own directory
-
- ▼ 11/27/2017
+ ▼ 12/20/2017
 
 
  ▪ project kernel/samsung/msm8974/
- ▪ 5873f2c wacom: Send custom keycodes when gestures are detected
+ ▪ efe30ba coresight: tmc: Fix the unbalanced lock in tmc_read()
+ ▪ 496de8f coresight: tmc: Fix use after free issue with tmc read
 
- ▼ 11/26/2017
+ ▼ 12/19/2017
 
 
- ▪ project device/samsung/hlte-common/
- ▪ 6e9bb24 hlte-common: Implement stylus gestures
+ ▪ project hardware/cyanogen/
+ ▪ f05c023 cmhw: Update picture adjustment class with proper comments
+
+ ▪ project packages/apps/AudioFX/
+ ▪ 8a61c77 AudioFX: fix NPE at onPrepareOptionsMenu
+
+ ▪ project vendor/samsung/
+ ▪ 9f2338f zero: Update Blobs to Nougat
+
+ ▼ 12/18/2017
+
+
+ ▪ project packages/apps/SetupWizard/
+ ▪ e0605c0 Disable SetupWraith, if GMS not present
+
+ ▪ project vendor/samsung/
+ ▪ 85599b2 serrano-common: Add aptX libraries
+
+ ▼ 12/17/2017
+
+
+ ▪ project hardware/qcom/fm/
+
+ ▪ project hardware/samsung/
+
+ ▪ project packages/apps/AudioFX/
+
+ ▪ project packages/apps/Bluetooth/
+
+ ▪ project packages/apps/Calendar/
+
+ ▪ project packages/apps/Camera2/
+
+ ▪ project packages/apps/CellBroadcastReceiver/
+
+ ▪ project packages/apps/CertInstaller/
+
+ ▪ project packages/apps/Eleven/
+
+ ▪ project packages/apps/Email/
+
+ ▪ project packages/apps/EmergencyInfo/
+
+ ▪ project packages/apps/Exchange/
+
+ ▪ project packages/apps/FMRadio/
+
+ ▪ project packages/apps/FlipFlap/
+
+ ▪ project packages/apps/Gallery2/
+
+ ▪ project packages/apps/HTMLViewer/
+
+ ▪ project packages/apps/Jelly/
+
+ ▪ project packages/apps/KeyChain/
+
+ ▪ project packages/apps/ManagedProvisioning/
+
+ ▪ project packages/apps/Nfc/
+
+ ▪ project packages/apps/Profiles/
+
+ ▪ project packages/apps/Recorder/
+
+ ▪ project packages/apps/SafetyRegulatoryInfo/
+
+ ▪ project packages/apps/Snap/
+
+ ▪ project packages/apps/Stk/
+
+ ▪ project packages/apps/Tag/
+
+ ▪ project packages/apps/Terminal/
 
  ▪ project packages/apps/Trebuchet/
- ▪ 3d80690 Trebuchet: Use ICU4J public APIs
 
- ▼ 11/25/2017
+ ▪ project packages/apps/TvSettings/
+
+ ▪ project packages/apps/UnifiedEmail/
+
+ ▪ project packages/apps/WallpaperPicker/
+
+ ▪ project packages/inputmethods/LatinIME/
+
+ ▪ project packages/providers/BookmarkProvider/
+
+ ▪ project packages/providers/CalendarProvider/
+
+ ▪ project packages/providers/CallLogProvider/
+
+ ▪ project packages/providers/ContactsProvider/
+
+ ▪ project packages/providers/DataUsageProvider/
+
+ ▪ project packages/providers/DownloadProvider/
+
+ ▪ project packages/providers/MediaProvider/
+
+ ▪ project packages/providers/TelephonyProvider/
+
+ ▪ project packages/providers/UserDictionaryProvider/
+
+ ▪ project packages/providers/WeatherProvider/
+
+ ▪ project packages/resources/devicesettings/
+
+ ▪ project packages/screensavers/Basic/
+
+ ▪ project packages/screensavers/PhotoTable/
+
+ ▪ project packages/services/CMAudioService/
+
+ ▪ project packages/services/WeatherService/
+
+ ▪ project packages/wallpapers/LivePicker/
+
+ ▪ project vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
+
+ ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
+
+ ▼ 12/16/2017
 
 
  ▪ project frameworks/base/
- ▪ c4526f1 SystemUI: LiveDisplay tile
 
- ▪ project kernel/samsung/msm8974/
- ▪ 0ba8cba msm: kgsl: Protect the event->handle with spinlock
+ ▪ project packages/apps/DUI/
 
- ▼ 11/24/2017
+ ▪ project packages/apps/Dialer/
 
+ ▪ project packages/apps/OmniSwitch/
 
- ▪ project kernel/samsung/msm8974/
- ▪ efd78a6 cfg80211: Check if PMKID attribute is of expected size
- ▪ cb8485d cfg80211: Define nla_policy for NL80211_ATTR_LOCAL_MESH_POWER_MODE
- ▪ e9470d5 SoC: msm: audio-effects: return directly to avoid integer overflow
- ▪ b541dd0 net: usb: rmnet_usb_ctrl:Make sure list_head operate atomically
- ▪ 3dd8228 ANDROID: input: keychord: fix race condition bug
- ▪ fa87b0b ALSA: pcm: prevent UAF in snd_pcm_info
- ▪ 88cea0c tracing: do not leak kernel addresses
- ▪ 9fcfcd1 UPSTREAM: tracing: Fix trace_printk() to print when not using bprintk()
- ▪ 17847a3 net: socket: fix recvmmsg not returning error from sock_error
+ ▪ project packages/apps/ResurrectionOTA/
 
- ▪ project vendor/samsung/
- ▪ ebc13c3 apq8084-common: Drop netmgrd and libnetmgr.so
- ▪ b40b94a apq8084-common: Drop proprietary rild/libril.so in favor of OSS implementation
- ▪ 9bcdeb4 apq8084-common: drop libs build from source
+ ▪ project packages/apps/ResurrectionStats/
 
- ▼ 11/22/2017
+ ▪ project packages/apps/Settings/
+
+ ▼ 12/15/2017
 
 
  ▪ project hardware/samsung/
- ▪ 5169e86 audio: End voice call in set_mode()
- ▪ f33a728 audio: Fix incall device switch handling
- ▪ 4b29ec9 audio: Improve code readability
- ▪ 7a82a0e audio: Initial support for amplifier HALs
+ ▪ 1824648 audio: Always use 16kHz sampling for SCO
 
