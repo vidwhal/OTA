@@ -2,192 +2,61 @@
  ▼ Resurrection Remix Nougat Ver 5.8.5 Changelog
 
 
- ▼ 12/22/2017
+ ▼ 01/01/2018
 
 
- ▪ project hardware/cyanogen/
- ▪ f66b300 cmhw: Remove duplicate class
+ ▪ project android/
+ ▪ bf7d741 Merge pull request #108 from christopherkardas/nougat
+ ▪ 2ef0a78 The future is now
 
- ▼ 12/21/2017
+ ▪ project vendor/cm/
+ ▪ 6a135a9 The future is now
 
-
- ▪ project kernel/samsung/msm8974/
- ▪ 0f5e952 msm: mdss: hdmi: check up-bound of CEC frame size
- ▪ 748038f msm: vidc: Allocate memory dynamically for debugfs info_reads
- ▪ e8c5205 msm: sensor: Fix crash when ioctl VIDIOC_MSM_SENSOR_INIT_CFG
- ▪ 65219a9 BACKPORT: dentry name snapshots
- ▪ 49ddc78 Bluetooth: bnep: bnep_add_connection() should verify that it's dealing with l2cap socket
- ▪ 9679a10 Bluetooth: cmtp: cmtp_add_connection() should verify that it's dealing with l2cap socket
- ▪ d3750af msm8974: remove 'reboot edl' interface for security.
- ▪ ed99cba ANDROID: scsi: Add segment checking in sg_read
- ▪ 6df9653 UPSTREAM: ALSA: timer: Call notifier in the same spinlock
- ▪ 17b412a UPSTREAM: ALSA: timer: Fix race between stop and interrupt
- ▪ 7e04e8a UPSTREAM: ALSA: timer: Fix link corruption due to double start or stop
- ▪ cfb2211 UPSTREAM: ALSA: timer: Code cleanup
- ▪ 7ee70f7 BACKPORT: ALSA: timer: Fix race at concurrent reads
- ▪ 58e4623 BACKPORT: ALSA: timer: Handle disconnection more safely
- ▪ cf81afb UPSTREAM: ALSA: timer: Fix wrong instance passed to slave callbacks
- ▪ b0e7f29 v4l2: Refactor, fix security bug in compat ioctl32
- ▪ 9b9f599 android: binder: Move buffer out of area shared with user space
- ▪ bf33a0e android: binder: Refactor prev and next buffer into a helper function
- ▪ 41f5d7c BACKPORT: staging: android: fix missing a blank line after declarations
- ▪ e5022a3 UPSTREAM: Staging: Android: removed an unnecessary else statement
- ▪ 2da9c86 UPSTREAM: include/linux/mm.h: add PAGE_ALIGNED() helper
- ▪ 2ba2889 ANDROID: usb: gadget: f_mtp: Return error if count is negative
- ▪ ab16327 ANDROID: binder: fix OOB write in __binder_update_page_range
- ▪ fd73750 binder: always allocate/map first BINDER_MIN_ALLOC pages
-
- ▼ 12/20/2017
+ ▼ 12/29/2017
 
 
- ▪ project kernel/samsung/msm8974/
- ▪ efe30ba coresight: tmc: Fix the unbalanced lock in tmc_read()
- ▪ 496de8f coresight: tmc: Fix use after free issue with tmc read
+ ▪ project device/samsung/klte/
+ ▪ 7226147 klte: Include fingerprint support from common
 
- ▼ 12/19/2017
+ ▪ project device/samsung/klte-common/
+ ▪ c2911c1 klte-common: Split out fingerprint support
 
+ ▪ project vendor/cm/
+ ▪ b87ef4c Update Magisk to v15.0 and Magisk Manager to v5.5.1 (#102)
 
- ▪ project hardware/cyanogen/
- ▪ f05c023 cmhw: Update picture adjustment class with proper comments
-
- ▪ project packages/apps/AudioFX/
- ▪ 8a61c77 AudioFX: fix NPE at onPrepareOptionsMenu
-
- ▪ project vendor/samsung/
- ▪ 9f2338f zero: Update Blobs to Nougat
-
- ▼ 12/18/2017
+ ▼ 12/27/2017
 
 
- ▪ project packages/apps/SetupWizard/
- ▪ e0605c0 Disable SetupWraith, if GMS not present
+ ▪ project device/samsung/klte/
+ ▪ f8ebee2 klte: Move partition sizes to -common
 
- ▪ project vendor/samsung/
- ▪ 85599b2 serrano-common: Add aptX libraries
+ ▪ project device/samsung/klte-common/
+ ▪ 72b7ce5 klte-common: Move partition sizes to -common
 
- ▼ 12/17/2017
+ ▼ 12/24/2017
 
 
- ▪ project hardware/qcom/fm/
+ ▪ project external/chromium-webview/
+ ▪ ea18916 Update webviews to Chromium 63.0.3239.111
 
- ▪ project hardware/samsung/
+ ▼ 12/23/2017
 
- ▪ project packages/apps/AudioFX/
 
- ▪ project packages/apps/Bluetooth/
+ ▪ project hardware/qcom/audio-caf/msm8916/
+ ▪ 08f9388 Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.29' into cm-14.1-caf-8916
 
- ▪ project packages/apps/Calendar/
+ ▪ project hardware/qcom/audio-caf/msm8994/
+ ▪ 4be649f Merge remote-tracking branch 'caf/LA.BF64.1.2.3_rb1.18' into cm-14.1-caf-8994
 
- ▪ project packages/apps/Camera2/
+ ▪ project hardware/qcom/media-caf/msm8916/
+ ▪ d92d048 Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.29' into cm-14.1-caf-8916
 
- ▪ project packages/apps/CellBroadcastReceiver/
-
- ▪ project packages/apps/CertInstaller/
-
- ▪ project packages/apps/Eleven/
-
- ▪ project packages/apps/Email/
-
- ▪ project packages/apps/EmergencyInfo/
-
- ▪ project packages/apps/Exchange/
-
- ▪ project packages/apps/FMRadio/
-
- ▪ project packages/apps/FlipFlap/
-
- ▪ project packages/apps/Gallery2/
-
- ▪ project packages/apps/HTMLViewer/
-
- ▪ project packages/apps/Jelly/
-
- ▪ project packages/apps/KeyChain/
-
- ▪ project packages/apps/ManagedProvisioning/
-
- ▪ project packages/apps/Nfc/
-
- ▪ project packages/apps/Profiles/
-
- ▪ project packages/apps/Recorder/
-
- ▪ project packages/apps/SafetyRegulatoryInfo/
+ ▪ project hardware/qcom/media-caf/msm8994/
+ ▪ 1633dd5 Merge remote-tracking branch 'caf/LA.BF64.1.2.3_rb1.18' into cm-14.1-caf-8994
 
  ▪ project packages/apps/Snap/
+ ▪ c89f3ae Snap: add QReader to module switch
+ ▪ f0e61e5 QuickReader: initial commit
 
- ▪ project packages/apps/Stk/
-
- ▪ project packages/apps/Tag/
-
- ▪ project packages/apps/Terminal/
-
- ▪ project packages/apps/Trebuchet/
-
- ▪ project packages/apps/TvSettings/
-
- ▪ project packages/apps/UnifiedEmail/
-
- ▪ project packages/apps/WallpaperPicker/
-
- ▪ project packages/inputmethods/LatinIME/
-
- ▪ project packages/providers/BookmarkProvider/
-
- ▪ project packages/providers/CalendarProvider/
-
- ▪ project packages/providers/CallLogProvider/
-
- ▪ project packages/providers/ContactsProvider/
-
- ▪ project packages/providers/DataUsageProvider/
-
- ▪ project packages/providers/DownloadProvider/
-
- ▪ project packages/providers/MediaProvider/
-
- ▪ project packages/providers/TelephonyProvider/
-
- ▪ project packages/providers/UserDictionaryProvider/
-
- ▪ project packages/providers/WeatherProvider/
-
- ▪ project packages/resources/devicesettings/
-
- ▪ project packages/screensavers/Basic/
-
- ▪ project packages/screensavers/PhotoTable/
-
- ▪ project packages/services/CMAudioService/
-
- ▪ project packages/services/WeatherService/
-
- ▪ project packages/wallpapers/LivePicker/
-
- ▪ project vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
-
- ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
-
- ▼ 12/16/2017
-
-
- ▪ project frameworks/base/
-
- ▪ project packages/apps/DUI/
-
- ▪ project packages/apps/Dialer/
-
- ▪ project packages/apps/OmniSwitch/
-
- ▪ project packages/apps/ResurrectionOTA/
-
- ▪ project packages/apps/ResurrectionStats/
-
- ▪ project packages/apps/Settings/
-
- ▼ 12/15/2017
-
-
- ▪ project hardware/samsung/
- ▪ 1824648 audio: Always use 16kHz sampling for SCO
-
+ ▪ project system/vold/
+ ▪ f902c08 vold: Fix cryptfs changepw parsing
