@@ -2,11 +2,11 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Stable>
         <hlte>
-            <Filename>RR-O-v6.0.0-20180218-hlte-Unofficial-vidwhal</Filename>
+            <Filename>RR-O-v6.0.0-20180311-hlte-Unofficial-vidwhal</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download latest RR build">https://www.androidfilehost.com/?fid=746010030569954971</RomUrl>
+                description="Download latest RR build">https://www.androidfilehost.com/?fid=673956719939826764</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
@@ -19,11 +19,11 @@
     </Stable>
     <Stable>
         <hltetmo>
-            <Filename>RR-O-v6.0.0-20180218-hltetmo-Unofficial-vidwhal</Filename>
+            <Filename>RR-O-v6.0.0-20180311-hltetmo-Unofficial-vidwhal</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download latest RR build">https://www.androidfilehost.com/?fid=962187416754461600</RomUrl>
+                description="Download latest RR build">https://www.androidfilehost.com/?fid=673956719939826766</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
@@ -36,11 +36,11 @@
     </Stable>
     <Stable>
         <hltechn>
-            <Filename>RR-O-v6.0.0-20180218-hltechn-Unofficial-vidwhal</Filename>
+            <Filename>RR-O-v6.0.0-20180311-hltechn-Unofficial-vidwhal</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download latest RR build">https://www.androidfilehost.com/?fid=746010030569954972</RomUrl>
+                description="Download latest RR build">https://www.androidfilehost.com/?fid=962187416754467375</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
@@ -53,11 +53,11 @@
     </Stable>
     <Stable>
         <hltekor>
-            <Filename>RR-O-v6.0.0-20180218-hltekor-Unofficial-vidwhal</Filename>
+            <Filename>RR-O-v6.0.0-20180311-hltekor-Unofficial-vidwhal</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download latest RR build">https://www.androidfilehost.com/?fid=962187416754461599</RomUrl>
+                description="Download latest RR build">https://www.androidfilehost.com/?fid=962187416754467376</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
