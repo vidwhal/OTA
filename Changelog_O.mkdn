@@ -3,293 +3,96 @@
 
 
 ====================
-     02-26-2018
+     03-11-2018
 ====================
 
-
-   * device/qcom/sepolicy/
-ba87a81 Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
-
-   * device/rr/sepolicy/
-37aacd7 Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
-
-   * frameworks/base/
-
-   * hardware/qcom/fm/
-
-   * hardware/qcom/media-caf/msm8996/
-3d25618 media: libOmxSw encoders require prop headers :(
-
-   * packages/apps/DUI/
-
-   * packages/apps/Dialer/
-
-   * packages/apps/Eleven/
-
-   * packages/apps/FMRadio/
-
-   * packages/apps/FlipFlap/
-
-   * packages/apps/Gallery2/
-
-   * packages/apps/LockClock/
-
-   * packages/apps/Recorder/
-
-   * packages/apps/ResurrectionOTA/
-cb59d33 ResurrectionOTA: rework automatic updates with JobService
-6781205 ResurrectionOTA: update notifications
-6482d93 ResurrectionOTA: Don't start the intent if there's no browser installed
-01fb805 Disable dexpreopt
-
-   * packages/apps/Settings/
-
-   * packages/apps/Terminal/
-
-   * packages/apps/UnifiedEmail/
-
-   * packages/services/OmniJaws/
-
-   * system/vold/
-330a836 Remove unused includes
-c0002e6 Revert "vold: Native NTFS kernel driver support"
-
-   * vendor/rr/
-508e968 Merge branch 'oreo' of https://github.com/ResurrectionRemix/android_vendor_resurrection into HEAD
-cf70304 Don't enable ANDROID_BINDER_IPC_32BIT for mixed userspace/kernel
-b9f0a41 Bump LINEAGE_PLATFORM_SDK_VERSION to 8
-b2ea21e lineage: Unconditionally ship exFAT tools
-
-====================
-     02-25-2018
-====================
-
-   * android/
-3faf10d track own system_sepolicy
 
    * bootable/recovery/
-f66aeed recovery: Graphical UI
-ff14b68 minui: Skip EV_REL input devices.
-af0276f Allow custom bootloader msg offset in block misc
-7d9e8fa bootloader_message: allow devices to override
-1c1c019 updater: Allow devices to suppress BLKDISCARD
-04dec0f sr: Add performance control
-59f17e7 recovery: init: mount pstore fs
-4d0eb79 minui: accept RGBA and treat it as RGBX
-0965dbe recovery: Enable the menu for User builds
-22a0a99 recovery: Remove "Supported API" message
-b51322b recovery: Fix mounting f2fs partitions
-e3aa5c8 Allow f2fs to reserve bytes for footer when formatting
-f3ce5ac update-binary: support reboot_now on older recoveries
-840bfc9 minui: support to pan display (FBIOPAN_DISPLAY)
-8a6aa6b recovery: Allow devices to reboot to download mode
-a9c227a recovery: autodetect filesystem type
-07b5577 sr: updater: Fix multi-stage docs
-351ff1a sr: Dejank the menus, fix colors
-c9455e3 sr: Fix the progress bar
-5228512 sr: Return to main menu after selection
-856faef recovery: Add wipe system partition option
-eb98fde recovery: Provide caching for sideload files
-9c62b06 recovery: bu: Implement backup/restore
-5dfa5bf recovery: Provide sideload cancellation
-47c5a3b Blank screen during shutdown and reboot
-493baca recovery: Awakening of MiniVold
-969862d sr: Allow device-specific recovery modules
-0e81208 sr: Include vendor init trigger
-298d203 recovery: Add fstools
+58decb0 Revert "recovery: Fix format_volume for f2fs"
+b649667 recovery: Fix redraws, flickering, and animation
+6f54468 updater: Fix and improve allowing devices to suppress BLKDISCARD
+56063ff updater: Fix allowing devices to suppress BLKDISCARD
 
-   * device/qcom/sepolicy/
-7eac191 sepolicy: Remove definition and labelling of sf_lcd_density_prop
+   * hardware/qcom/display/
+466c608 msm8974: Move QCOM HALs to vendor partition
+35a7b6a hwc: msm8084: Set ioprio for vsync thread
+fe84e7d display: Don't use gnu-oldstyle field designators
+a7b6e48 msm8084: include  kernel headers
+45f6cfe msm8960: copybit: Fix type conversion error for GCC 4.7
+96f36a5 display: add TARGET_PROVIDES_LIBLIGHT
+db1c905 display: Always assume kernel source is present
+c3af3f4 Revert "msm8974: deprecate msm8974"
 
-   * device/rr/sepolicy/
-d54feea common: Add sf_lcd_density_prop type and labelled props
-5e84bfc sepolicy: Initial policy for recovery
-
-   * device/samsung/klte-common/
-435b4ae klte-common: Update kernel exfat flag
-
-   * external/e2fsprogs/
-9d2fbee Fix build warnings with '__bitwise' macro redefined
-
-   * external/f2fs-tools/
-c1c7fa3 f2fs-tools: Rename utf conversion symbols
-0cc764b f2fs-tools: Rename quota symbols
-975d7bc f2fs-tools: Add static libs for recovery
-
-   * frameworks/base/
-20eaaf0 Recents: Dont tint membar to accent if recents styles are enabled
-808daf1 BatteryService: add turbo power charging support
-66e3eee Themes: Notification tint: add bool to enable algorithm for dark backgrounds
-38bc59b [3/5] fwb: Add support to force use of the black theme instead of the dark
-3be3c91 SystemUI: RecentsView: Use accent color in memory bar
-
-   * kernel/samsung/msm8974/
-aa5862b ANDROID: sdcardfs: Hold i_mutex for i_size_write
+   * hardware/qcom/gps/
+e375f8c msm8974: Return the correct length of nmea sentence
+cd4b7f5 msm8974: Don't rely on transitively included headers
+aa21dd8 msm8974: Fix logging level and remove nmea log
+7a6cc46 msm8974: Fix duplicate gps.conf for hammerhead
+53199be msm8974: Move device dependent modules to /vendor
+87ae4d6 msm8974: Cleanup obsolete LOCAL_PRELINK_MODULE
+3b31cc3 msm8974: Default apn ip type to ipv4
 
    * lineage-sdk/
-e5a981f [1/5] lineage-sdk: Add support to force use of the black theme instead of the dark
-a73dfcc Add White accent
-235ba92 Move accent strings to rr_strings
-
-   * packages/apps/Contacts/
-2cb5e07 Contacts: Enable support for device contact.
+0be4760 Revert "lineage-sdk: Update the way OMS records details about overlays"
 
    * packages/apps/LineageParts/
-ec9eed5 [2/5] LineageParts: Add support to force use of the black theme instead of the dark
-d518a03 Remove Ok dialog when tapping cancel on automagic dialog
-c2c4181 StylePreferences: Ensure mStyleStatus is changed when style changes
-ef07b98 Add white accent
-1d5546c Jump to homescreen and back on theme change
+4c6326a Revert "LineageParts: Update the way OMS records details about overlays"
+
+====================
+     03-10-2018
+====================
+
+
+   * frameworks/base/
+27e1070 Merge branch 'oreo' of https://github.com/ResurrectionRemix/android_frameworks_base into HEAD
+e01fddc Revert "OMS: Only allow trusted overlays to be registered."
+
+   * hardware/qcom/gps/
+a1f9895 msm8974: Add missing liblog dependency
+9100f0e Revert "msm8974: remove from top level makefile"
+a00e4ad Revert "msm8974: deprecate msm8974"
+
+   * packages/apps/CarrierConfig/
+8f44654 CarrierConfig: HoT and tele.ring (232 07) may roam on T-Mobile (232 03)
+
+   * packages/apps/Gallery2/
+7cd4469 Fix the issue of view don't reload when onPause
+3c2f100 Fix FC of parsing uri is null
+ba099de SDGallery:Fix monkey FC when url from pick activity is null
+6d57bca Don't show Camera Icon when no pictures found in Albums
+15e538a SnapdragonGallery: Fix crash show dialog when activity finished
+385313d Fix custom filter don't work when first click after back to original
+de46c7f SnapdragonGallery: Fix dialog dismiss when home
+25eaa5b SnapdragonGallery: Fix multithread synchronization in screenReceiver
 
    * packages/apps/Settings/
-1547a38 Update Jalebi Maintainer (#921)
-aa90ed8 Use accent color on storage primary
-f61894a ChangelogActivity: Make some strings translatable
-98f65b4 CustomSeekbar: Make default text translatable
-8a078bb About RR: Prevent FC when browser isn't installed
-7abc983 Settings: hide aosp ThemePreferenceController
-db60618 settings: Add a RemotePreference for device-specific doze settings
-4c2ad8d Updated resurrection_device_maintainers_strings.xml (#920)
-
-   * packages/overlays/Resurrection/
-f9951bb [4/5] overlays: Kang and adapt dark theme to black theme
-7814e46 Add white accent theme
-
-   * system/extras/
-d28d5f0 mkf2fsuserimg.sh: support sload_f2fs
-04f0fc8 mkf2fsuserimg.sh: add missing features
-e8357ef f2fs_utils: enable mac build by removing dead codes
-e8b6fe0 Use -Werror in system/extras
-5984d6b extras: remove su
-fc20f73 f2fs_utils: Add a static libf2fs_sparseblock for minvold
-
-   * system/sepolicy/
-c994fac sepolicy: Allow recovery to write to rootfs
-
-   * system/vold/
-3c6ab83 vold: Fix minivold
-
-   * vendor/rr/
-abb09f1 [5/5] vendor: Build black primary themes
-64ae1f6 Build white accent
-2666205 Kill teal color for the default printer service
+80cb019 Merge branch 'oreo' of https://github.com/ResurrectionRemix/Resurrection_packages_apps_Settings into HEAD
+19a3aea Revert "Update the way OMS records details about overlays"
 
 ====================
-     02-24-2018
+     03-09-2018
 ====================
 
 
-   * bionic/
-012ed28 linker: allow the linker to shim executables
-
-   * bootable/recovery/
-529971e sr: Enable gunzip/gzip/unzip/zip commands
-afc2dae sr: Puke out an /etc/fstab so stuff like busybox/toybox is happy
-59fbcbd recovery: ui: Support hardware virtual keys
-a0bca1a recovery: ui: Minor cleanup for touch code
-4509d87 recovery: ui: Default to touch enabled
-1538923 sr: Get a proper shell environment in recovery
+   * build/make/
+f32592e [TEMP] Disable Script enhancments & fix build
+bf27fe0 pathmap: Move RIL path mapping to core/config.mk
 
    * frameworks/base/
-708d27a base: SystemUI: Mark PIE strings as non translatable (#214)
-
-   * hardware/samsung/
-62b70f8 power: Allow POWER_HINT_DISABLE_TOUCH in low power mode
-
-   * kernel/samsung/msm8974/
-0559023 ARM: configs: lineage_*: Enable sdfat
-5f665c2 fs: exfat: Allow disabling exfat
-dc2bb7d fs: sdfat: Allow disabling sdfat
-d7cf1d0 fs: sdfat: Fix compilation without debugging
-46e48d4 fs: sdfat: Fix compilation on Linux 3.4
-2e4005f fs: Add sdfat
-c5c90f8 VFS: Properly free dentry name snapshots in vfs_rename2
-
-   * packages/apps/Nfc/
-5981d86 NfcNci: make T3T/Nfc-F HCE optional
-42f0214 Keep screen on during detecting some NFC devices
-
-   * vendor/samsung/
-03680ca serrano-common: Hex edit mm-qcamera-daemon for custom libc
-
-====================
-     02-23-2018
-====================
-
-
-   * device/qcom/sepolicy/
-425a78c sepolicy: Label mpctl_socket as data_file_type
-
-   * device/samsung/hlte-common/
-84bb2f0 hlte-common: Update kernel exfat flag
-c48237a hlte-common: Set proper permissions for mDNIe nodes
-
-   * device/samsung/klte-common/
-74f7c03 klte-common: Set proper permissions for mDNIe nodes
-
-   * device/samsung/msm8974-common/
-f159447 msm8974-common: Remove exfat and ntfs sepolicies
-a6a77f9 msm8974-common: Wire up mDNIe features
-e05835e msm8974-common: Enable HBM for outdoor mode
-
-   * external/exfat/
-53c9108 exfat: Don't include the fuse module
-
-   * frameworks/base/
-a2673f3 WifiTile: Avoid NPE during boot phase
-e0dc39d SystemUI: Remove trailing whitespace on high_accuracy_description
-a794f4b LocationTile: Improve strings
-5e73386 SystemUI: Advanced location tile
-aab3836 Revert"Location tile enable switching between 3 modes"
-dddc677 SystemUI: disable tuner
-384afa5 PackageParser: Use ExecutorService to parse certs and signatures
-7388a89 Revert "Use multithread to verify files contained in APK"
-1d8d879 Revert "Optimize code of multithread installation"
-d567878 Fix notification sound for some apps if Smart notification sound enabled
-cb70d9c Allow vibration instead of beep for in-call notifications [1/2]
-
-   * hardware/samsung/
-7f2c1bf ril: Add support for imsType parcel member
-ffe632e ril: Add support for roamingProtocol parcel member
-c41b85c AdvancedDisplay: Rename Negative to Accessibility
-d9b3226 AdvancedDisplay: Add support for new mDNIe scenarios
-763a8c3 AdvancedDisplay: Fix strings
-
-   * kernel/samsung/msm8974/
-0c681a4 mdnie: Expose no. of modes
-f9a5568 mdnie: Fix sysfs node snprintfs
-
-   * lineage-sdk/
-815c1cb sdk: add TILE_LOCATION_DETAIL logging const
-
-   * packages/apps/Settings/
-5978715  Allow vibration instead of beep for in-call notifications [2/2]
-56aba99 update Redmi 3s maintainer (#917)
-12616c6 Maintainer please Huawei Nexus 6P (#918)
-
-====================
-     02-22-2018
-====================
-
-
-   * device/rr/sepolicy/
-823cfb1 common: Label sdfat as vfat
-
-   * device/samsung/qcom-common/
-6b3768a SamsungDoze: Rename to avoid conflicts with AdvancedDisplay
-
-   * frameworks/base/
-99edc9f SystemUI:Fix the damn left clock visibility
+758dc30 Revert "Visualizer: Adjust for volume level"
+e19c2df Revert "framework: fix screenshot and rotation animation for devices with abnormal hw rotation"
+6f30345 storage: Set all sdcards to visible
 
    * hardware/qcom/fm/
 
    * packages/apps/AudioFX/
-528bd49 AudioFX: Sync translations with MusicFX
 
    * packages/apps/Bluetooth/
 
    * packages/apps/Camera2/
-2faa0f7 Camera2: Target API 27
+
+   * packages/apps/CarrierConfig/
+dec7923 Disable OTA for U.S. Cellular since there is no need for it
 
    * packages/apps/CellBroadcastReceiver/
 
@@ -305,8 +108,6 @@ f9a5568 mdnie: Fix sysfs node snprintfs
 
    * packages/apps/Email/
 
-   * packages/apps/EmergencyInfo/
-
    * packages/apps/ExactCalculator/
 
    * packages/apps/FMRadio/
@@ -315,400 +116,331 @@ f9a5568 mdnie: Fix sysfs node snprintfs
 
    * packages/apps/Gallery2/
 
-   * packages/apps/HTMLViewer/
-
-   * packages/apps/KeyChain/
-
-   * packages/apps/LockClock/
-
-   * packages/apps/ManagedProvisioning/
-
    * packages/apps/Messaging/
 
-   * packages/apps/PackageInstaller/
-848caeb Fix "Provide more information why an install failed" for TV
-
-   * packages/apps/PhoneCommon/
-
-   * packages/apps/Profiles/
+   * packages/apps/Nfc/
 
    * packages/apps/Recorder/
 
-   * packages/apps/SafetyRegulatoryInfo/
-
    * packages/apps/Settings/
-cff17fc Added Xiaomi Mi A1 Maintainer (#915)
+7e01a97 Add Mi Max 2 (#929)
 
-   * packages/apps/Stk/
+   * packages/apps/Snap/
 
    * packages/apps/StorageManager/
 
    * packages/apps/Tag/
 
-   * packages/apps/Terminal/
-
    * packages/apps/TvSettings/
-
-   * packages/apps/UnifiedEmail/
 
    * packages/inputmethods/LatinIME/
 
-   * packages/providers/BlockedNumberProvider/
-
-   * packages/providers/BookmarkProvider/
-
    * packages/providers/CalendarProvider/
-
-   * packages/providers/CallLogProvider/
-
-   * packages/providers/ContactsProvider/
 
    * packages/providers/DownloadProvider/
 
-   * packages/providers/MediaProvider/
-
-   * packages/providers/TelephonyProvider/
-
-   * packages/providers/TvProvider/
-
-   * packages/providers/UserDictionaryProvider/
-
-   * packages/providers/WeatherProvider/
-
    * packages/screensavers/Basic/
-
-   * packages/screensavers/PhotoTable/
 
    * packages/services/BuiltInPrintService/
 
-   * packages/services/Mms/
-
-   * packages/wallpapers/LivePicker/
-
-   * system/vold/
-2f4e24a vold: Only include exfat support for devices that specify a driver
+   * vendor/rr/
+9e0c225 Revert "pathmap: remove duplicate include-path-for"
 
 ====================
-     02-21-2018
+     03-08-2018
 ====================
 
    * android/
-dc335cb Update source size (#112)
+adcb164 Track own fw native
+4c0f4db manifest: Track awk
 
    * build/make/
-e8c8409 Merge remote-tracking branch 'upstream/lineage-15.1' into oreo
-
-   * device/rr/sepolicy/
-7b3aa9f sepolicy: Cleanup context labelling for external sdcards
-
-   * frameworks/base/
-6e8bc7e SystemUI: properly adjust statusbar height on rotate as necessary
-622396e Use better implementation for Left Clock
-
-   * packages/apps/LineageParts/
-e07290e Update privacy guard off color
-
-   * packages/apps/Nfc/
-9cae7ca Terminate server threads on NFC disable
-
-   * packages/apps/Settings/
-e5e43ca Update Vibe K5 Maintainer (#916)
-be3ea89 Fix SuggestionCondition card bg
-
-   * packages/overlays/Resurrection/
-19b3b20 Update colors.xml
-
-   * system/sepolicy/
-aa71a7c Revert "sepolicy: Fix up exfat and ntfs support"
-9c317c2 Revert "sepolicy: Add missing exfat and fuseblk types"
-
-   * system/vold/
-ab4c379 vold: Make exfat driver support generic
-568d91c vold: Don't disable dirsync for exfat
-
-   * vendor/rr/
-c55fdd1 Merge branch 'oreo' of https://github.com/ResurrectionRemix/android_vendor_resurrection into HEAD
-6040176 kernel: fix ccache variable sanitation for clang builds
-4c2b54d lineage: Sort soong variables and configurations
-fb4c6c6 ATV: Ship AppDrawer
-877b294 lineage: soong: replace space with colon on TARGET_LD_SHIM_LIBS
-0b7a450 overlay: Use old NTP server in China
-298abe0 lineage: Disable DateTimeCheck activity
-abd46b4 vendor: set adaptive icon mask to circle
-
-====================
-     02-20-2018
-====================
-
-   * android/
-350332a Add Resurrection Overlays
-
-   * bionic/
-02ced6d Add ability to read /etc/passwd and /etc/group
-
-   * frameworks/base/
-301e926 Fix Dual clock on first boot
-5902bd1 Apply Settings dark theme overlay
-ac66bf7 Fix Double clock visibility
-1527a9e StatusBar: Enable LineageDarkSysUI Theme
-32a5c50 Fix center left clock glitch
-43be9fa Fix navigation bar tile Intents
-8a824ef Remove Boolean validator for battery percent
-3dc205e Make Sure Center Clock Layout is gone when initating ticker
-a46263c Revert "Volume panel dark switch bg color fix for panel porn"
-
-   * hardware/qcom/display-caf/msm8952/
-8648766 hwc: Set ioprio for vsync thread
-109d5ba gralloc: allow forcing old pixel alignment
-fa0af83 Fix duplicate copy file rules
-a892624 SkImageEncoder->SkEncodeImage
-d1d9702 display: Use LOCAL_VENDOR_MODULE
-eac53e7 display: Move all opensource modules to vendor partition
-
-   * hardware/samsung/
-4f7dc6f power: Silence excessive logging
-
-   * kernel/samsung/msm8974/
-9a68f84 ANDROID: qtaguid: Fix the UAF probelm with tag_ref_tree
-a5a345c rtac: add size check when reading cal data kvaddr buffer
-934f23e ASoC: wcd9xxx: restrict debugfs permission
-6b240e2 USB: core: prevent malicious bNumInterfaces overflow
-93235cc ipsec: Fix aborted xfrm policy dump crash
-
-   * lineage-sdk/
-1aaeb42 Berry: Set sane color names, add teal, Amber, and remove a duplicate 3/4
-
-   * packages/apps/LineageParts/
-1e7103f Berry: Set sane color names, add teal, Amber, and remove a duplicate 4/4
-
-   * packages/apps/Settings/
-f392739 Fix maintainers fragment FC
-a9b2d3b Fix Settings issues *Fix battery styles FC *Fix condition card bg color
-44603cd Settings: fix dark style issues
-7f7c487 Add Left Clock [2/2]
-defa43b BatteryPercent: Allow disabling percent inside circle
-5db5340 BatteryMeterDrawable: add battery styles [2/2]
-3e52d83 Add Listanimation Views and Interpolator [2/2]
-
-   * packages/overlays/Resurrection/
-fe07786 SettingsDark: Add Accent color to preferenceBG
-2d7dbc6 Add Settings dark overlay
-22679da Berry: Set sane color names, add teal, Amber, and remove a duplicate 1/4
-8437876 Add SysUI Dark theme from stock aosp dark
-
-   * vendor/codeaurora/telephony/
-3519b8a telephony: Allow devices to provide their own telephony-ext
-
-   * vendor/rr/
-b89e164 kernel: fix ccache variable sanitation for clang builds
-d3057f7 lineage: Sort soong variables and configurations
-3c1f805 ATV: Ship AppDrawer
-b05cfe3 build SettingsDark
-c7defcc lineage: soong: replace space with colon on TARGET_LD_SHIM_LIBS
-747e003 overlay: Use old NTP server in China
-1007007 lineage: Disable DateTimeCheck activity
-ad8a884 Merge branch 'oreo' of https://github.com/ResurrectionRemix/android_vendor_resurrection into oreo
-533653b vendor:Build SysUIDark theme
-
-====================
-     02-19-2018
-====================
-
-
-   * frameworks/base/
-0a2d402 Fix Battery style with Right clock enabled
-c0be76e Make Left Clock work with our implementation
-d75fa7e Volume panel dark switch bg color fix for panel porn
-5f3069ce Navigation Bar Tile
-7d7e999 Add QSDetailItems
-07ed9f5 add Left Clock [1/2]
-6c0fbb9 Battery: skip useless scaling calls when attaching the view
-6046c31 Text/hidden battery: don't use additional resources for no padding values
-c996ba9 Portrait battery: show percentage when charging
-ead3b47 Cleanup battery styles we won't use (hidden and landscape)
-5bd9ad3 Battery: use SB observer to update everything and not when attaching views
-d25440c Portrait/hidden/txt battery: show percentage in quick sb header and keyguard
-b01051c Text battery style: show a tilde when charging
-8948fbd Fix right padding when using hidden/text battery style
-0d3a13c Circle and dot battery fixes and improvements
-6aedc93 Move sysui tuner percentage settings to custom battery settings [1/2]
-6d3816ff BatteryMeterDrawable: add hidden option
-35d6b0b BatteryMeterDrawable: add text style
-
-   * hardware/qcom/media-caf/msm8952/
-769dd04 media: Move Video HAL libraries to vendor image.
-1facc58 media: Move Video HAL libraries to vendor image
-f713e53 media: Move Video HAL libraries to vendor image
-
-   * hardware/qcom/media-caf/msm8974/
-81beaaa mm-video-v4l2: Fix KW resported issues
-
-   * kernel/samsung/msm8974/
-f4321e2 iovec: make sure the caller actually wants anything in memcpy_fromiovecend
-6977f2c ANDROID: sound: rawmidi: Hold lock around realloc
-af19568 input: synaptics: restrict sysfs node write permissions
-c14c345 clocksource: arch_timer: make virtual counter access configurable
-06f08a2 staging: android: ashmem: fix a race condition in ASHMEM_SET_SIZE ioctl
-4098d7d crypto: algif_skcipher - Load TX SG list after waiting
-
-   * vendor/rr/
-1b80c55 lineage: Move all system props to PRODUCT_GENERIC_PROPERTIES
-a3a23b8 lineage: add BUILD_RRO_SYSTEM_PACKAGE target
-41e1c87 Build berry styles
-
-====================
-     02-18-2018
-====================
-
-   * android/
-6f38550 manifest: Switch to our fork of fw/opt/dtp
-
-   * build/make/
-bc1fa28 rr: fix mismerge
-6d05ec2 Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
-
-   * device/rr/sepolicy/
-d26f5e3 Add pocket judge selinux policy
-3a03c18 sepolicy: Add policy for edgegestureservice
-938a455 sepolicy: update for rr
-
-   * device/samsung/hlte/
-ba33520 hlte: Disable DateTimeCheck activity
-a6d3cd9 hlte: Don't mess with APN or CDMA CarrierConfig options
-
-   * device/samsung/hlte-common/
-278dbf6 hlte-common: Transition to TARGET_LD_SHIM_LIBS
-
-   * device/samsung/hltekor/
-1d3a245 Revert "hlte: Import config_disabledComponents from vendor/cm"
-65a1f4e Revert "hlte: Disable Google's carrier activation"
-
-   * device/samsung/klte/
-f8bfeaa klte: libinit: Update SM-G900{F,V} build fingerprints
+7de6b66 Revert "Place TARGET_FS_CONFIG_GEN passwd/group files in /vendor/etc"
+d6fd02f products: make targets used for addonsu inherit from lineage
+1cd24fe config: use AOSP RIL for non-lineage builds
+782d637 build: unconditionally use lineage pathmap
+73df7dc Move ART default properties into system partition
+21e430d Add PRODUCT_SYSTEM_DEFAULT_PROPERTIES
+4abba68 Revert "build: Add new variable to hold generic build properties"
+21679da Allow setting the recovery density separately from the aapt config
+4b0d488 dumpvar: Dump RECOVERY_VARIANT if not empty
+7cfd9e0 Add dumpvar for WITH_SU
+83466b0 core: include getb64key.py in otatools
 
    * device/samsung/msm8974-common/
-6279ca8 msm8974-common: update dexpreopt option
-d5d83cb msm8974-common: Remove noatsecure
+399e9af msm8974-common: Move XTRA_SERVER entries to overlays
 
-   * frameworks/base/
-0000c18 BatteryMeterDrawable: add dotted circle style
-a06f143 BatteryMeterDrawable: add battery styles [1/2]
-74976b9 Fw_base - Listanimation Views and Interpolator [1/2]
-8581b3f fb: add back all keyboard IME features back (1/2)
-1dca81c framework: Port IME selector notification toggle (2/2)
-d53a1b8 Make status bar ticker play nice with center clock
-5aace05 Fix Music ticker tint
-ce128e2 Add stub for setCursorVisibility
-c2a41af Add powerhint function that accepts an array of data
-26f1eba DndTile: Avoid NPE during boot phase
-fcc2c1e BluetoothTile: Avoid NPE during boot up phase
-590c5aa NfcTile: Avoid NPE during boot up phase
-938f66e systemui: introduce berry styles
-edfa48c Revert "[1/2] base: configure SystemUI theme"
-
-   * hardware/qcom/audio-caf/msm8960/
-d1b80f9 Use header lib instead of using global include path
-c037c5e hal: Use LOCAL_VENDOR_MODULE
+   * frameworks/native/
+c5a051f Revert "InputDispatcher: On keypress, deliver keycode to pokeUserActivity"
+811e2d4 Revert "PowerManager.h: Define USER_ACTIVITY_FLAG values"
+6e58bf0 InputDispatcher: On keypress, deliver keycode to pokeUserActivity
+dcbb80b PowerManager.h: Define USER_ACTIVITY_FLAG values
 
    * lineage-sdk/
-24b695f lineage-sdk: Set drawable bounds in generateAlertColorFromDrawable()
-7fa351f lineage-sdk lights: Treat requested led color of 0 as needing a default
-98ce06e livedisplay: don't throw exception if config is not ready, warning is enough
-3455a71 sdk: livedisplay: add a method to determine whether night mode is enabled
-3268d69 sdk: add berry global style and accent settings
-b7067f5 sdk: add accent names references
-f6bf46e sdk: Cleanup PerformanceManager
+5c7ec8a LineageSettings: Add a setting for button backlight only when pressed
+210184b lineage-sdk: Update the way OMS records details about overlays
+ddffa32 sdk: introduce Style API
+
+   * packages/apps/LineageParts/
+75d5b99 LineageParts: Update the way OMS records details about overlays
+2a486eb LineageParts: switch to Style API
+b7a900d LineageParts: Update our NFC profile mime type
+
+   * packages/apps/Settings/
+d09729f  Update Galaxy S5 Maintainers (#927)
+88bc581 Update Hammerhead Maintainer (#928)
+71ab59e Add Zuk Z2 PRO Maintainer (#926)
+5c64076 Update cancro maintainer (#925)
+
+   * prebuilts/lineage-sdk/
+767ea95 Add old APIs info
+
+   * vendor/rr/
+86f6b37 lineage: Enable wifi wakeup config option
+3b54468 lineage: Add awk
+b909c28 qcom_target: Move RIL path mapping to core/config.mk
+2476b9f pathmap: remove duplicate include-path-for
+622cf92 vendor: add style api
+a13bd3e backuptool: Take into account new location for system default props
+bb74b1e lineage: Move to Google's method of defining system default props
+173bbdd extract_utils: Fix vendor framework makefile generation
+bb5d6ce extract-utils: Use LOCAL_VENDOR_FILE instead of LOCAL_PROPRIETARY_FILE
+
+====================
+     03-07-2018
+====================
+
+   * android/
+572f237 manifest: android-8.1.0_r11 -> android-8.1.0_r15
+
+   * bootable/recovery/
+a55e565 recovery: Add awk lib and driver
+
+   * build/make/
+aeb94e4 Merge branch 'oreo' of https://github.com/ResurrectionRemix/android_build into HEAD
+3023710 Merge tag 'android-8.1.0_r15' into HEAD
+
+   * device/samsung/klte-common/
+d091dbd klte-common: camera: add video HDR, phase-af and DRC
+4c4b746 klte-common: fix camera ISO setting in Snap
+8b8ab82 klte-common: fix camera hal shim
+
+   * external/one-true-awk/
+cfe7878 awk: Add libawk_main for recovery and fixup symbols
+
+   * frameworks/base/
+6391aa7 Merge branch 'oreo' of https://github.com/ResurrectionRemix/android_frameworks_base into HEAD
+d25cdc3 Merge tag 'android-8.1.0_r15' into HEAD
+
+   * hardware/samsung/
+ecb6050 audio: Update mixer knobs after re-applying output route
+96ff312 ril: service: Get off my back
+d26f4c9 ril: service: Fix breakage introduced by f7c75aa4e0
+
+   * packages/apps/Settings/
+6f15734 Merge branch 'oreo' of https://github.com/ResurrectionRemix/Resurrection_packages_apps_Settings into HEAD
+ed3f75a Merge tag 'android-8.1.0_r15' into HEAD
+
+   * packages/apps/Snap/
+72869bf Do not crash if we don't have support for RAW files
+
+   * system/vold/
+95a2e4e vold: Make sure block device exists before formatting it
+
+====================
+     03-06-2018
+====================
+
+
+   * device/samsung/hltekor/
+4c83c92 hltekor: Use a single, western, libsec-ril.so blob
+
+   * frameworks/av/
+a463552 Merge tag 'android-8.1.0_r15' into lineage-15.1
+
+   * frameworks/base/
+
+   * hardware/qcom/audio-caf/msm8996/
+b755dfd hal: switch audio_extn_set_parameters and amplifier_set_parameters
+
+   * kernel/samsung/msm8974/
+013a281 misc: Import SM-G900F kernel source code
+00af865 msm: mdss: Import updates from G900FXXU1CRA2
+06e46b1 staging: vnswap: Import updates from G900FXXU1CRA2
+0cfd8a0 wcnss: Fix backport of CVE-2017-8280 fix
+bd42d70 wcnss: fix the potential buffer flow issue in firmware setup
+f0eab36 wcnss: Fix mismatch between format and argument in pr_err()
+
+   * lineage-sdk/
 
    * packages/apps/DUI/
 
    * packages/apps/LineageParts/
-934e94a LineageParts: Remove unused resources
-dff64c7 LineageParts: Fix berry style issues
-094d837 parts: introduce berry styles
 
    * packages/apps/ResurrectionOTA/
+0d4e729 ResurrectionOTA: Don't start the intent if there's no browser installed
+cdb887f ResurrectionOTA: rework automatic updates with JobService
+a27a065 ResurrectionOTA: Use getprop instead reading build.prop
+ea94427 ResurrectionOTA: update notifications
+92cadbf ResurrectionOTA: Disable dexpreopt
+fce2f6f ResurrectionOTA: squash all translations
+6fe3ae1 OTA: Update app for RR
 
    * packages/apps/Settings/
-10f6df3 Input: add back all keyboard IME features back (2/2)
-281b6e1 Input: Port IME selector notification toggle (1/2)
-8f8e377 Add Link to Lineage Theme styles
-e190979 Refactor device maintainer fragment (#910)
+ff49cdf Revert "Settings: adaptive icon"
 
-   * packages/services/OmniJaws/
+   * packages/overlays/Resurrection/
+c757304 Overlays: Add toast dialog and GA overlay to dark/black mode
 
-   * packages/services/Telephony/
-0ad3d9d Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
+   * system/bt/
+f76bc74 Merge tag 'android-8.1.0_r15' into lineage-15.1
 
-   * system/core/
-940f717 Added missing AID which is causing setgroups to fail
-1d62206 core: Lockscreen Charging info (1/3)
+   * system/update_engine/
+841c1a9 Merge tag 'android-8.1.0_r15' into lineage-15.1
 
-   * vendor/rr/
-990fadf Update Changelog and features list - Remove readme Change-Id: Ieb1e73081a4518fc4159ab5cb96f2a0eea1f0f4d
-a4880f8 lineage: soong: Add var for linker shim libs
-5d2fc37 Update our privapp whitelist
-60c3802 lineage: Move all system props to PRODUCT_GENERIC_PROPERTIES
-a57f366 lineage: Allow IPv6 on roaming for T-Mobile US APNs
-b7db469 lineage: Consolidate T-Mobile US APNs
+   * system/vold/
+63d1064 Revert "f2fs: Fix kMkfsPath to match location of CM binary"
+
+   * vendor/samsung/
+fd48b6f hltekor: Use a single, western, libsec-ril.so blob
 
 ====================
-     02-17-2018
+     03-05-2018
 ====================
 
-
-   * bootable/recovery/
-22e4edb recovery: Use pathmap for recovery
-f3ee30d Add more specific error codes for uncrypt failures
-c57d612 Remove LOCAL_CLANG
-a3d1278 roots.cpp: Reformatting the file.
-fbcb1a0 recovery: otautil: Add libziparchive linkage
+   * android/
+8bf17b7 Merge branch 'oreo' of ssh://github.com/ResurrectionRemix/platform_manifest into default
+dc2e64e Add back snap
 
    * build/make/
-5a44bea Place TARGET_FS_CONFIG_GEN passwd/group files in /vendor/etc
-5a07d52 releasetools: include INSTALL/ and SYSTEM/build.prop when unzipping
-e44d95b core: include getb64key.py in otatools
+a04a09e Updates (#39)
 
-   * device/samsung/hlte-common/
-e0d4431 Revert "hlte-common: Build ANT+ support"
-5973617 hlte-common: init: Set proper user/group for wifi rfkill device
-374be0a hlte-common: init: Remove existing hostapd elements
-bbcc9f3 hlte-common: init: Set ownership of wifi nvram_path
+   * frameworks/base/
+d295ebc Use bool var judge whether the navi-keys enabled
+e6633a5 Visualizer: Adjust for volume level
 
-   * device/samsung/klte-common/
-c8d45db klte-common: Transition to TARGET_LD_SHIM_LIBS
-9da1285 klte-common: init: restorecon .wifiver.info on boot
-01ebfad klte-common: sepolicy: Allow FP HAL more privs for vcs_data_file
-61eedfa klte-common: sepolicy: Allow tee more privs for vcs_data_file
+   * hardware/qcom/audio-caf/msm8998/
+33c6c64 hal: switch audio_extn_set_parameters and amplifier_set_parameters
+f19eb03 hal: Support the audio amplifier hook
 
-   * device/samsung/msm8974-common/
-4bb6449 msm8974-common: sepolicy: Allow hostapd to read wifi rfkill dev
-
-   * external/libtar/
-0dc8e63 Fix compilation for O-MR1
-
-   * external/toybox/
-cf5eac6 toybox: Use toybox for dd and grep in recovery
-
-   * hardware/qcom/audio-caf/msm8996/
-4221991 Merge tag 'LA.UM.6.5.r1-06300-8x96.0' into HEAD
-
-   * hardware/qcom/display-caf/msm8996/
-13d89bf Merge tag 'LA.UM.6.5.r1-06300-8x96.0' into HEAD
-
-   * hardware/qcom/media-caf/msm8996/
-711c15d Merge tag 'LA.UM.6.5.r1-06300-8x96.0' into HEAD
+   * hardware/qcom/power/
+4004811 power: Don't advertise power profile when interaction boost disabled
 
    * hardware/samsung/
-d8d04fd audio: Support new and old mixer paths locations
-2beff42 audio: Print error in case of nonexistant mixer paths
+719630a audio: Guard mixer path dependency fix
+
+   * kernel/samsung/msm8974/
+cc9f522 msm: camera: Return -NOTTY on invalid ioctl command.
+ad21993 msm: mdss: fix race condition in mdp debugfs
+cfbb5f1 msm: mdss: Fix fence installation when retire fence is skipped
+ecded92 msm: mdss: Install sync fences after user copy
+5363603 msm: sensor: Validationg function pointers before using them
+2553587 msm: camera: sensor: Validate destination step position
+43622de msm: camera: validate num_streams in stream_cfg_cmd before using it
+5448a4a mqueue: fix a use-after-free in sys_mq_notify()
+2d5a025 pids: make task_tgid_nr_ns() safe
+78172bf Sanitize 'move_pages()' permission checks
+ba4c6bb tcp: initialize rcv_mss to TCP_MIN_MSS instead of 0
+c640f3e tcp: avoid infinite loop in tcp_splice_read()
+9100efa udp: properly support MSG_PEEK with truncated buffers
+04db6b1 ANDROID: qtaguid: Change %p to %pK
+fd65206 KEYS: prevent KEYCTL_READ on negative key
+8fa1884 KEYS: fix dereferencing NULL payload with nonzero length
+fb5269e packet: fix tp_reserve race in packet_set_ring
+d5d7731 packet: hold bind lock when rebinding to fanout hook
+53b3634 diag: Add mutex protection while reading dci debug statistics
+ee264e0 uvcvideo: Prevent heap overflow in uvc driver
+c81632f msm: vidc: WARN_ON() reveals fuction addresses
+64df562 input: synaptics: restrict sysfs node write permissions
+5d6f7d3 BACKPORT: crypto: msm: Fix buffer overflow issue
+5629ec0 battery: Import updates from G900FXXU1CRA2
+
+   * packages/apps/OmniStyle/
+d9641bc Fix spinner text color
 
    * packages/apps/Settings/
-8b53208 Update dreamlte & dream2lte maintainer (#909)
-43ff292 Update Falcon maintainer (#906)
-1135e26 Change 'plugged in' to 'connected' (#907)
+4e865af Tint accent google package verifier and find device drawables
+9a05b84 Merge branch 'oreo' of https://github.com/ResurrectionRemix/Resurrection_packages_apps_Settings into oreo
+aaeb35a Fix changelog theme for dark/black overlays
+7d339c5 Settings: hook up volume tone preference to LineageSettings
+e580cb7 Settings: "Security & location" -> "Security & privacy"
+a16d222 One does not simply become a Developer
+e107396 Settings: Fix the failing strings
+16c7289 Settings: adaptive icon
 
-   * packages/apps/Stk/
-52fa936 Stk: adaptive icon
+   * packages/overlays/Resurrection/
+77cf9f8 Overlays:Fix black volume sliders
+f1cc383 Overlays: Dark/Black mode accent and background fixes
 
-   * vendor/qcom/opensource/interfaces/
-1cf0b14 display: include config/1.1
+====================
+     03-04-2018
+====================
+
+   * android/
+62c25ef crowdin: Track LineageParts and lineage-sdk (#116)
+
+   * bionic/
+2de89a8 Revert "Add ability to read /etc/passwd and /etc/group"
+
+   * device/samsung/msm8974-common/
+306c353 msm8974-common: Allow overriding full dex preopt
+
+   * frameworks/base/
+228e6f1 SystemUI: Move dimen to right file (#217)
+718fa62 Updates (#215)
+77639fa SystemUI: Don't allow translation on some strings (#216)
+3f949cd Add kill button to notification guts [1/2]
+614016c frameworks/base lights: Let Lineage lights decide if notification led is on/off
+0c0e745 SystemUI: Use Java range for volume tone tone generator
+
+   * hardware/qcom/audio-caf/msm8952/
+7b486fe audio: configs: update policy configuration to fix vts failure
+f8f9a84 hal: fix failure in running VtsHalAudioV2_0Target module
+e657be2 mm-audio: aenc: Fix VTS failures for encoders
+297e11f hal: Fix failure in VtsHalAudioV2_0Target test due to spkr protection
+f6aa85b hal: Update prefixes for audio system properties
+1ac3f4e audio: Fix msm8952-snd-card-mtp support
+25111ae hal: Clean up compilation warnings
+c3a1fbf hal: Fix voice call recording
+ab524f1 hal: Support the audio amplifier hook
+9b06833 hal: Don't try to record using 3-mic unless we mean it
+c9f39b7 audio: Extend platform parser to allow device name aliasing
+f701b2e audio: Return ENODATA when position is failed to be retreived
+a68b3d9 hal: configs: effects: update conf & lib paths
+18769b0 hal: audio-test: Move omx tests mm-audio-internal
+ced45bb audio: Only allow non-legacy HAL
+c338cd6 audio: Use    * pathmap
+
+   * hardware/qcom/display-caf/msm8952/
+6e7faf6 Merge remote-tracking branch 'caf/LA.BR.1.3.7_rb1.9' into lineage-15.1-caf-8952
+
+   * hardware/qcom/media-caf/msm8952/
+88d4d3a Merge remote-tracking branch 'caf/LA.BR.1.3.7_rb1.9' into lineage-15.1-caf-8952
+
+   * hardware/qcom/power/
+a36e212 msm8952: Support power profiles
+0a5232e msm8952: Fix typo
+
+   * lineage-sdk/
+a190db3 lineage-sdk lights: Let Lineage lights decide if notification led is on/off
+
+   * packages/apps/DUI/
+57423ca Fling kb cursors: long press left/right to keep moving cursor [1/2]
+
+   * packages/apps/Settings/
+82f869e Fix some seekbar inconsistencies
+4f3ceee Add notification guts kill app button [2/2]
+c3a36f7 Fling kb cursors: long press left/right to keep moving cursor [2/2]
+
+   * packages/apps/Trebuchet/
+555fdd5 Merge pull request #1 from jhenrique09/oreo
+fd90442 Sync launcher theme with system dark/light theme
+7cbfaa5 Fix accent colors
+
+   * packages/overlays/Resurrection/
+6d18fef Overlays : improve settings theme
+
+   * vendor/rr/
+f2aef28 Copy changelog to out folder
+9014270 build: Don't create two ota packages
+
