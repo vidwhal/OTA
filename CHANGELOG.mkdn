@@ -2,61 +2,18 @@
  ▼ Resurrection Remix Nougat Ver 5.8.5 Changelog
 
 
- ▼ 01/01/2018
+ ▼ 03/07/2018
 
 
- ▪ project android/
- ▪ bf7d741 Merge pull request #108 from christopherkardas/nougat
- ▪ 2ef0a78 The future is now
+ ▪ project hardware/samsung/
+ ▪ b057e8b audio: Update mixer knobs after re-applying output route
 
- ▪ project vendor/cm/
- ▪ 6a135a9 The future is now
-
- ▼ 12/29/2017
+ ▼ 03/05/2018
 
 
- ▪ project device/samsung/klte/
- ▪ 7226147 klte: Include fingerprint support from common
+ ▪ project hardware/samsung/
+ ▪ 276108c audio: Guard mixer path dependency fix
 
- ▪ project device/samsung/klte-common/
- ▪ c2911c1 klte-common: Split out fingerprint support
+ ▪ project packages/apps/ResurrectionOTA/
+ ▪ 6d414a0 Merge pull request #21 from anoop44/nougat
 
- ▪ project vendor/cm/
- ▪ b87ef4c Update Magisk to v15.0 and Magisk Manager to v5.5.1 (#102)
-
- ▼ 12/27/2017
-
-
- ▪ project device/samsung/klte/
- ▪ f8ebee2 klte: Move partition sizes to -common
-
- ▪ project device/samsung/klte-common/
- ▪ 72b7ce5 klte-common: Move partition sizes to -common
-
- ▼ 12/24/2017
-
-
- ▪ project external/chromium-webview/
- ▪ ea18916 Update webviews to Chromium 63.0.3239.111
-
- ▼ 12/23/2017
-
-
- ▪ project hardware/qcom/audio-caf/msm8916/
- ▪ 08f9388 Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.29' into cm-14.1-caf-8916
-
- ▪ project hardware/qcom/audio-caf/msm8994/
- ▪ 4be649f Merge remote-tracking branch 'caf/LA.BF64.1.2.3_rb1.18' into cm-14.1-caf-8994
-
- ▪ project hardware/qcom/media-caf/msm8916/
- ▪ d92d048 Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.29' into cm-14.1-caf-8916
-
- ▪ project hardware/qcom/media-caf/msm8994/
- ▪ 1633dd5 Merge remote-tracking branch 'caf/LA.BF64.1.2.3_rb1.18' into cm-14.1-caf-8994
-
- ▪ project packages/apps/Snap/
- ▪ c89f3ae Snap: add QReader to module switch
- ▪ f0e61e5 QuickReader: initial commit
-
- ▪ project system/vold/
- ▪ f902c08 vold: Fix cryptfs changepw parsing
